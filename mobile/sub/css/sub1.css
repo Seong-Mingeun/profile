@@ -1,0 +1,264 @@
+@charset "utf-8";
+
+/*main*/
+main {
+    width: 100%;
+    /*height: 420px;*/
+    height: 192px;
+    background: url(../img/sub1/main_bg.png) no-repeat center/cover;
+    position: relative;
+    margin-top: 60px;
+}
+
+main:before {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 100%;
+    background-color: #000;
+    opacity: 0.3;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+main .main_inner {
+    width: 90%;
+    margin: 0 auto;
+    position: relative;
+}
+
+
+main .main_title {
+    padding-top: 28px;
+    text-align: center;
+    color: #fff;
+}
+
+main .main_title h2 {
+    font-size: 18px;
+    font-size: 1.125rem;
+    margin-bottom: 16px;
+}
+
+main .main_title p {
+    line-height: 1.8;
+    font-size: 12px;
+    font-size: 0.75rem;
+    word-break: keep-all;
+}
+
+
+/*attr_title*/
+.attr_title {
+    width: 100%;
+    height: 40px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    background-color: rgba(255, 255, 255, 0.8);
+}
+
+.attr_title .attr_tab {
+    width: 90%;
+    margin: 0 auto;
+    line-height: 40px;
+    position: relative;
+}
+
+.attr_title .attr_tab:before {
+    content: "";
+    display: block;
+    width: 1px;
+    height: 24px;
+    background-color: #999;
+    position: absolute;
+    top: 9px;
+}
+
+.attr_title .attr_tab:after {
+    content: "";
+    display: block;
+    width: 1px;
+    height: 24px;
+    background-color: #999;
+    position: absolute;
+    top: 9px;
+    right: 0;
+}
+
+.attr_title li {
+    float: left;
+    width: 20%;
+    text-align: center;
+    box-sizing: border-box;
+    position: relative;
+}
+
+.attr_title li:after {
+    content: "";
+    display: block;
+    width: 1px;
+    height: 24px;
+    background-color: #999;
+    position: absolute;
+    right: 0;
+    top: 9px;
+}
+
+.attr_title li:last-child:after {
+    display: none;
+}
+
+.attr_title li.active a {
+    color: #e16254;
+}
+
+.attr_title li a {
+    font-size: 11px;
+    font-size: 0.6875rem;
+}
+
+
+
+/*section*/
+section {
+    width: 100%;
+}
+
+/*attr_slider*/
+#world {
+    /*display: none;*/
+}
+
+#adventure {
+    display: none;
+}
+
+#character {
+    display: none;
+}
+
+#tomorrow {
+    display: none;
+}
+
+#samchulli {
+    display: none;
+}
+
+.attr {
+    width: 90%;
+    margin: 60px auto;
+    color: #333;
+}
+
+.attr .title {
+    font-size: 20px;
+    font-size: 1.25rem;
+    margin-bottom: 30px;
+}
+
+.attr .title span {
+    color: #999;
+    font-weight: 100;
+    margin-left: 12px;
+    font-size: 16px;
+    font-size: 1rem;
+    font-style: italic;
+}
+
+.attr_wrap .attr_box {
+    width: 48%;
+    height: 180px;
+    background-color: #feb6b7;
+    margin-right: 4%;
+    margin-bottom: 30px;
+    border-top-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+    overflow: hidden;
+    /*outline: 1px solid red;*/
+    float: left;
+}
+
+#character .attr_wrap .attr_box {
+    display: none;
+}
+
+#tomorrow .attr_wrap .attr_box {
+    display: none;
+}
+
+.attr_wrap .attr_box:nth-child(2n) {
+    margin-right: 0;
+}
+
+.attr_wrap .attr_box .mainimg {
+    width: 100%;
+    height: 140px;
+    border-top-left-radius: 30px;
+    display: block;
+}
+
+.attr_wrap .attr_box .attr_des {
+    color: #333;
+    height: 40px;
+    line-height: 40px;
+}
+
+.attr_des h2 {
+    font-size: 14px;
+    font-size: 0.875rem;
+    letter-spacing: 0.2px;
+    position: relative;
+    margin-left: 8px;
+}
+
+#loadMore {
+    width: 66px;
+    height: 32px;
+    line-height: 32px;
+    background-color: #e16254;
+    color: #fff;
+    margin: 10px auto 0;
+    letter-spacing: 1.6px;
+    border-radius: 10px;
+    font-size: 12px;
+    font-size: 0.625rem;
+    text-align: center;
+}
+
+/*top버튼*/
+#tbtn {
+    width: 45px;
+    height: 45px;
+    background: url(../../img/top.png) no-repeat;
+    background-size: 45px;
+    border: none;
+    border-radius: 50%;
+    font-weight: bold;
+    font-size: 14px;
+    font-size: 0.875rem;
+    letter-spacing: -0.2px;
+    position: relative;
+    top: 80%;
+    left: 87%;
+    cursor: pointer;
+    transition: all .5s ease-out;
+    animation: tmove 1.5s infinite alternate linear;
+    box-shadow: 4px 7px 10px #999;
+}
+
+@keyframes tmove {
+    0% {
+        top: 80%;
+    }
+
+    100% {
+        top: 81%;
+    }
+}
+
+footer {
+    margin-top: 0;
+}

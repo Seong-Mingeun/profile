@@ -1,0 +1,283 @@
+@charset "utf-8";
+
+main {
+    width: 100%;
+    height: 420px;
+    background: url(../img/sub8/main_bg.png) no-repeat top/cover;
+    position: relative;
+    margin-top: 100px;
+}
+main:before {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 100%;
+    background-color: #000;
+    opacity: 0.3;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+main .main_inner {
+    width: 90%;
+    margin: 0 auto;
+    position: relative;
+}
+
+main .lnb {
+    position: absolute;
+    top: 30px;
+    left: 0;
+}
+
+main .lnb .location {
+    width: 300px;
+}
+
+main .lnb .location > li {
+    float: left;
+    position: relative;
+	color: #fff;
+	font-size: 14px;
+}
+main .lnb .location > li:before {
+    content: "";
+    display: block;
+    width: 2px;
+    height: 12px;
+    background-color: #fff;
+    position: absolute;
+    top: 4px;
+    left: 0px;
+}
+main .lnb .location > li:nth-child(2) {
+    width: 65px;
+    padding-left: 12px;
+    padding-right: 0px;
+}
+main .lnb .location > li:last-child {
+    width: 140px;
+    padding-left: 16px;
+}
+
+main .lnb .location>li:first-child:before {
+    display: none;
+}
+main .lnb .location > li:last-child:before {
+	margin-left: 6px;
+}
+
+main .lnb .location .home {
+    width: 30px;
+}
+
+main .lnb .location .home a img {
+    width: 20px;
+    display: block;
+}
+
+
+main .main_title {
+    padding-top: 100px;
+    text-align: center;
+    color: #fff;
+}
+
+main .main_title h2 {
+   font-size: 32px;
+    margin-bottom: 40px;
+}
+main .main_title p {
+    line-height: 1.6;
+    font-size: 24px;
+}
+
+/*section*/
+section {
+    width: 100%;
+    height: 100%;
+    background-color: #eee;
+     padding: 100px 0 80px;
+    box-sizing: border-box;
+	color: #333;
+}
+
+/*예매하기*/
+section .reserve {
+    width: 80%;
+    max-width: 1280px;
+    height: 80%;
+    margin: 0 auto 100px;
+    padding-bottom: 80px;
+    background-color: #fff;
+    border-radius: 20px;
+    box-shadow: 5px 7px 20px #ccc;
+}
+.reserve .reserve_title img {
+    display: block;
+    width: 180px;
+    margin: 0 auto;
+    padding: 28px 0 40px;
+}
+
+.reserve .reserve_title h2 {
+    text-align: center;
+    font-size: 32px;
+    margin-bottom: 60px;
+    position: relative;
+}
+
+.reserve .reserve_title h2::after {
+    content: "";
+    display: block;
+    width: 36px;
+    height: 3px;
+    background-color: #e16254;
+    position: absolute;
+    top: 180%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.visit {
+    padding: 32px 60px;
+}
+.visit h3 {
+    font-size: 26px;
+	margin-bottom: 6px;
+}
+.visit h3 img {
+	display: inline-block;
+	vertical-align: top;
+	margin-right: 14px;
+}
+.visit .notice {
+    font-size: 18px;
+    color: #777;
+}
+/*달력*/
+.calendar-wrapper {
+	margin: 80px 0 28px;
+}
+.calendar-container {
+    margin: 0 auto;
+}
+
+button.prev-button {
+    font-size: 20px;
+}
+
+span.month-label {
+    font-size: 24px;
+/*    font-weight: 400;*/
+}
+
+button.next-button {
+    font-size: 20px;
+}
+
+/*인원선택*/
+.visitor {
+    padding: 32px 60px;
+}
+.visitor h3 {
+    font-size: 26px;
+	margin-bottom: 6px;
+    position: relative;
+}
+.visitor h3 img {
+	display: inline-block;
+	vertical-align: top;
+	margin-right: 14px;
+}
+.visitor .notice {
+    font-size: 18px;
+    color: #777;
+}
+/*예매 숫자 카운트*/
+.count_wrap {
+    margin-top: 60px;
+    position: relative;
+    left: 11%;
+}
+.count_box {
+    width: 25%;
+    float: left;
+    padding: 18px 6px 24px 6px;
+    text-align: center;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    margin-left: 20px;
+}
+.count_box:first-child {
+    margin-left: 0;
+}
+.count_box p {
+    font-size: 22px;
+    line-height: 1.6;
+}
+.count_box p span {
+    display: block;
+    font-size: 14px;
+    letter-spacing: -0.8px;
+    color: #e16254;
+}
+.count_box .counter {
+    margin-top: 18px;
+}
+.count_box .counter button {
+    cursor: pointer;
+    border: 1px solid #e16254;
+    padding: 4px 14px;
+    border-radius: 10px;
+    font-size: 32px;
+    background-color: transparent;
+}
+.count_box span.begin {
+    font-size: 32px;
+    padding: 4px 24px;
+}
+/*예약하기 버튼*/
+.reserve_btn {
+    display: block;
+    width: 180px;
+    margin: 60px auto 0;
+    border: 1px solid #e16254;
+    border-radius: 100px;
+    padding: 12px 40px;
+    text-align: center;
+}
+.reserve_btn:hover {
+    background-color: #e16254;
+    color: #fff;
+}
+
+/*top버튼*/
+#tbtn {
+    width: 80px;
+    height: 80px;
+    background: url(../../img/top.png) no-repeat;
+    border: none;
+    border-radius: 50%;
+    font-weight: bold;
+    font-size: 18px;
+    letter-spacing: -0.2px;
+    position: relative;
+    top: 80%;
+   left: 91%;
+    cursor: pointer;
+    transition: all .5s ease-out;
+    animation: tmove 1.5s infinite alternate linear;
+    box-shadow: 4px 7px 10px #999;
+}
+
+@keyframes tmove {
+    0% {
+        top: 80%;
+    }
+    100% {
+        top: 81%;
+    }
+}
+footer {
+    margin-top: 0;
+}

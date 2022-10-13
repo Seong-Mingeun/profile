@@ -1,0 +1,344 @@
+@charset "utf-8";
+
+
+main {
+    width: 100%;
+    height: 192px;
+    background: url(../img/sub4/main_bg.png) no-repeat top/cover;
+    position: relative;
+    margin-top: 60px;
+}
+
+main:before {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 100%;
+    background-color: #000;
+    opacity: 0.3;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+main .main_inner {
+    width: 90%;
+    margin: 0 auto;
+    position: relative;
+}
+
+main .main_title {
+    padding-top: 28px;
+    text-align: center;
+    color: #fff;
+}
+
+main .main_title h2 {
+    font-size: 18px;
+    font-size: 1.125rem;
+    margin-bottom: 16px;
+}
+
+main .main_title p {
+    line-height: 1.8;
+    font-size: 12px;
+    font-size: 0.75rem;
+}
+
+
+/*section*/
+section {
+    color: #333;
+}
+
+/*티켓 이용 안내*/
+.info {
+    width: 90%;
+    margin: 60px auto 0;
+}
+
+.info h2 {
+    text-align: center;
+    font-size: 22px;
+    font-size: 1.375rem;
+    position: relative;
+}
+
+
+.info h2::after {
+    content: "";
+    display: block;
+    width: 36px;
+    height: 3px;
+    background-color: #e16254;
+    position: absolute;
+    top: 180%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+/*이용안내 박스*/
+.info .info_wrap ul {
+    width: 100%;
+    margin-top: 80px;
+    padding: 14px 20px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-top: 3px solid #e16254;
+}
+
+.info .info_wrap ul li {
+    margin-bottom: 16px;
+}
+.info .info_wrap ul li:last-child {
+    margin-bottom: 0;
+}
+.info .info_wrap ul li .num {
+    width: 10%;
+    text-align: center;
+    padding: 4px 0;
+    border-radius: 100px;
+    background-color: #e16254;
+    color: #fff;
+    font-size: 12px;
+    font-size: 0.75rem;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.info .info_wrap ul li .info_txt {
+    display: inline-block;
+    margin-left: 4px;
+    font-size: 14px;
+    font-size: 0.75rem;
+    width: 80%;
+    vertical-align: middle;
+    line-height: 1.6;
+}
+
+.ticketBtn {
+    text-align: center;
+    margin: 30px auto 0;
+    width: 160px;
+    height: 20px;
+    font-size: 12px;
+    font-size: 0.75rem;
+    letter-spacing: 0.8px;
+}
+
+.ticketBtn a {
+    border: 1px solid #e16254;
+    border-radius: 50px;
+    font-size: 14px;
+    font-size: 0.875rem;
+    padding: 8px;
+    line-height: 20px;
+}
+
+
+/*일반 요금*/
+.fee {
+    width: 90%;
+    margin: 60px auto 0;
+}
+
+.fee h2 {
+    text-align: center;
+    font-size: 20px;
+    font-size: 1.5rem;
+    position: relative;
+}
+
+.fee h2::after {
+    content: "";
+    display: block;
+    width: 36px;
+    height: 3px;
+    background-color: #e16254;
+    position: absolute;
+    top: 180%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.fee .fee_table {
+    border: 1px solid #333;
+    border-top: 3px solid #e16254;
+    width: 100%;
+    margin-top: 60px;
+    border-collapse: collapse;
+}
+
+.fee .fee_table thead {
+    width: 100%;
+    height: 40px;
+    background-color: rgba(225, 98, 84, 0.4);
+}
+
+.fee .fee_table thead .row {
+    width: 18%;
+}
+
+.fee .fee_table thead th {
+    font-weight: 400;
+    font-size: 12px;
+    font-size: 0.75rem;
+    line-height: 1.6;
+    padding: 4px 0;
+    border: 1px solid #f0f0f0;
+
+}
+
+.fee .fee_table thead th ~ th {
+    width: 24%;
+}
+
+.fee .fee_table thead th span {
+    display: block;
+    font-size: 10px;
+    font-size: 0.625rem;
+    letter-spacing: -0.8px;
+    color: #e16254;
+}
+
+.fee .fee_table tbody th {
+    width: 10%;
+    height: 60px;
+    font-weight: 100;
+    font-size: 14px;
+    font-size: 0.875rem;
+}
+
+.fee .fee_table tbody th span {
+    display: block;
+    line-height: 1.8;
+    letter-spacing: -0.8px;
+    font-size: 10px;
+    font-size: 0.625rem;
+    color: #e16254;
+}
+
+.fee .fee_table tbody th,
+.fee .fee_table tbody td {
+    border: 1px solid #ccc;
+    text-align: center;
+    font-size: 12px;
+    font-size: 0.75rem;
+}
+
+.fee .fee_table tbody tr:last-child td {
+    text-align: left;
+    padding: 12px 8px;
+    line-height: 1.8;
+}
+
+/*체험 시설*/
+.experience {
+    width: 90%;
+    margin: 60px auto 80px;
+}
+
+.experience h2 {
+    text-align: center;
+    font-size: 20px;
+    font-size: 1.5rem;
+    position: relative;
+}
+
+.experience h2::after {
+    content: "";
+    display: block;
+    width: 36px;
+    height: 3px;
+    background-color: #e16254;
+    position: absolute;
+    top: 180%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.experience .experience_table {
+    border: 1px solid #333;
+    border-top: 3px solid #e16254;
+    width: 100%;
+    margin-top: 60px;
+    border-collapse: collapse;
+}
+
+.experience_table thead {
+    width: 100%;
+    height: 50px;
+    background-color: rgba(225, 98, 84, 0.4);
+}
+
+.experience_table thead .row {
+    width: 30%;
+}
+
+.experience_table thead th {
+    font-weight: 400;
+    font-size: 12px;
+    font-size: 0.75rem;
+    line-height: 1.6;
+    padding: 4px 0;
+    border: 1px solid #f0f0f0;
+
+}
+
+.experience_table thead th ~ th {
+    width: 15%;
+}
+
+.experience_table tbody th {
+    width: 15%;
+    height: 100px;
+    font-weight: 100;
+    font-size: 14px;
+    font-size: 0.875rem;
+}
+
+.experience_table tbody th,
+.experience_table tbody td {
+    border: 1px solid #ccc;
+    text-align: center;
+    font-size: 12px;
+    font-size: 0.75rem;
+}
+
+.experience_table tbody tr:last-child td {
+    text-align: left;
+    padding: 12px 8px;
+    line-height: 1.8;
+}
+
+/*top버튼*/
+#tbtn {
+    width: 45px;
+    height: 45px;
+    background: url(../../img/top.png) no-repeat;
+    background-size: 45px;
+    border: none;
+    border-radius: 50%;
+    font-weight: bold;
+    font-size: 14px;
+    font-size: 0.875rem;
+    letter-spacing: -0.2px;
+    position: relative;
+    top: 80%;
+    left: 87%;
+    cursor: pointer;
+    transition: all .5s ease-out;
+    animation: tmove 1.5s infinite alternate linear;
+    box-shadow: 4px 7px 10px #999;
+}
+
+
+@keyframes tmove {
+    0% {
+        top: 80%;
+    }
+
+    100% {
+        top: 81%;
+    }
+}

@@ -1,0 +1,154 @@
+@charset "utf-8";
+
+header {
+    width: 100%;
+    height: 100px;
+    background-color: rgb(255, 255, 255);
+    position: fixed;
+    left: 0;
+    top: 0;
+    border-bottom: 1px solid #eee;
+    z-index: 9999;
+}
+
+
+header .header_inner {
+     width: 90%;
+    max-width: 1600px;
+    height: 100%;
+    margin: 0 auto;
+    /*	outline: 2px solid #f00;*/
+}
+
+header .header_inner h1 {
+    width: 20%;
+    height: 100%;
+    float: left;
+}
+
+header .header_inner h1 #logo img {
+    height: 65px;
+    display: block;
+    margin-top: 17.5px;
+}
+
+/*navigation*/
+nav {
+    width: 70%;
+    height: 100%;
+    line-height: 100px;
+    float: left;
+}
+
+nav .gnb li {
+    float: left;
+    width: 20%;
+    font-family: 'S-CoreDream-5Medium';
+   /* text-align: center;*/
+    /*outline: 1px solid #333;*/
+}
+
+nav .gnb li a {
+    font-size: 20px;
+    display: inline-block;
+}
+
+nav .gnb li a:hover {
+    color: #e16254;
+}
+
+/*서브메뉴*/
+.sub {
+    width: 100%;
+    background-color: #fff;
+    position: absolute;
+    top: 101px;
+    display: none;
+}
+
+.sub .sub_inner {
+    width: 90%;
+    height: 100%;
+    max-width: 1600px;
+    margin: 0 auto;
+    height: 260px;
+    padding-top: 20px;
+    position: relative;
+    background: url(../../img/char_logo.png) no-repeat left;
+    background-size: 260px;
+}
+
+.sub .sub_inner .sub_wrap {
+    width: 70%;
+    margin: 0 auto;
+    position: absolute;
+    /*left: 14.42448979591837%;*/
+    left: 20%;
+}
+
+.sub .sub_inner .sub_wrap .submenu {
+    width: 20%;
+    float: left;
+}
+
+.sub .sub_inner .sub_wrap .submenu li {
+    padding: 14px 0;
+    /*text-align: center;*/
+}
+
+.sub .sub_inner .sub_wrap .submenu li a {
+    font-size: 16px;
+    font-weight: 100;
+    color: #555;
+    transition: all .3s;
+    padding-bottom: 6px;
+    display: inline-block;
+}
+
+.sub .sub_inner .sub_wrap .submenu li a:hover {
+    color: #e16254;
+    border-bottom: 3px solid #e16254;
+}
+
+/*utility*/
+.utility {
+  width: 10%;
+    height: 100px;
+    line-height: 100px;
+    float: right;
+    text-align: right;
+    white-space: nowrap;
+}
+
+.utility li {
+    display: inline-block;
+}
+
+.utility li:first-child {
+    margin-right: 20px;
+    position: relative;
+}
+
+.utility li:first-child::after {
+    content: "";
+    display: block;
+    width: 1px;
+    height: 15px;
+    background-color: #ccc;
+    position: absolute;
+    top: 44px;
+    right: -14px;
+}
+
+.utility li a {
+    font-size: 14px;
+}
+
+.utility li a:hover {
+    text-decoration: underline;
+    color: #e16254;
+}
+
+.logInfo ul {
+    margin-left: -40px;
+}

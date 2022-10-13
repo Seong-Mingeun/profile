@@ -1,0 +1,52 @@
+@charset "utf-8";
+
+* {
+    margin: 0;
+    padding:0;
+}
+ul,ol,li {
+    list-style: none;
+}
+ul::after, ol::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+.clearfix {
+    content: "";
+    display: block;
+    clear: both;
+}
+a {
+    text-decoration: none;
+    display: block;
+}
+
+h1,h2,h3,h4,h5,h6 {
+    font-size: 100%;
+}
+img {
+    display: block;
+    border: none;
+}
+
+body {
+   font-family: 'Noto Sans KR', sans-serif;
+    color: #231d1d;
+}
+button {
+    background-color: transparent;
+    font-size: inherit;
+    border: 0;
+    cursor: pointer;
+    font-family: inherit;
+    outline: 0;
+}
+button:focus {
+    outline: 0;
+}
+
+button:disabled {
+    cursor: not-allowed;
+}
+

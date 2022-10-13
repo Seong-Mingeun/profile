@@ -1,0 +1,800 @@
+/* 와이드 pc  */
+
+/*스토리*/
+#content .story {
+    padding: 6% 3%;
+    overflow: hidden;
+    text-align: center;
+}
+
+#content .story h3 {
+    font-size: 55px;
+    font-weight: 700;
+    color: #1a1b54;
+    margin-bottom: 3%;
+}
+
+#content .story strong {
+    display: block;
+    margin-bottom: 2%;
+    font-size: 20px;
+}
+
+#content .story p {
+    line-height: 1.5em;
+    margin-bottom: 3%;
+    font-size: 20px;
+}
+
+#content .story ul {
+    overflow: hidden;
+}
+
+#content .story li {
+    float: left;
+}
+
+#content .story li:first-of-type {
+    background: url(../images/about1.png) center no-repeat;
+    background-size: cover;
+    height: 470px;
+    width: 40%;
+    margin-right: 1%;
+}
+
+#content .story li:last-of-type {
+    background: url(../images/about2.png) center no-repeat;
+    background-size: cover;
+    height: 470px;
+    width: 59%;
+}
+
+#content .story li img {
+    width: 100%;
+}
+
+/*트레일러*/
+#content .trailer div {
+    background: url(../images/trailer_visual.jpg) center no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    width: auto;
+    height: 360px;
+    position: relative;
+}
+
+#content .trailer h3 {
+    text-align: center;
+    font-size: 55px;
+    font-weight: 700;
+    color: #fff;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    text-shadow: 3px 3px 2px rgba(0, 0, 0, 0.3);
+}
+
+#content .trailer ul {
+    overflow: hidden;
+    padding: 5% 2% 5%;
+}
+
+#content .trailer li {
+    float: left;
+    width: 31.33%;
+    text-align: center;
+    margin: 0 1% 4%;
+}
+
+#content .trailer a {
+    display: block;
+}
+
+#content .trailer a img {
+    width: 100%;
+    margin-bottom: 4%;
+}
+
+#content .trailer a:hover img {
+    opacity: .6;
+}
+
+/*캐릭터*/
+#content .character {
+    width: 100%;
+}
+
+#content .character .title_character {
+    background: url(../images/character_visual.jpg) no-repeat left;
+    background-attachment: fixed;
+    background-size: cover;
+    width: auto;
+    height: 360px;
+    position: relative;
+}
+
+#content .character h3 {
+    text-align: center;
+    font-size: 55px;
+    font-weight: 700;
+    color: #fff;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    text-shadow: 3px 3px 2px rgba(0, 0, 0, 0.3);
+}
+
+#content .character .character_wrap {
+    width: 100%;
+    padding: 5%;
+    box-sizing: border-box;
+    /* outline: 1px solid red;*/
+}
+
+#content .character #joy,
+#sad,
+#anger,
+#disgust,
+#fear {
+    display: none;
+}
+
+#content .character .char_infoWrap .char_infoTxt {
+    width: 23%;
+    float: left;
+    margin: 0 1%;
+}
+
+#content .character .char_infoWrap .char_infoTxt h4 {
+    color: #1a1b54;
+}
+
+#content .character .char_infoWrap .char_infoImg {
+    width: 74%;
+    float: right;
+    /*outline: 1px solid black;*/
+}
+
+#content .character .character_wrap .char_infoImg li {
+    width: 31.33%;
+    float: left;
+    margin: 0 1%;
+}
+
+#content .character .character_wrap .char_infoImg li:last-child {
+    margin-right: 0;
+}
+
+#content .character .character_wrap .char_categoryBox {
+    width: 100%;
+    height: 300px;
+    /*outline: 1px solid green;*/
+    clear: both;
+    padding-top: 3%;
+}
+
+#content .character .character_wrap li.char_category {
+    width: 14%;
+    height: 300px;
+    margin-right: 3%;
+    float: left;
+    border: 1px solid #ccc;
+    border-bottom-right-radius: 30px;
+    box-sizing: border-box;
+    position: relative;
+    cursor: pointer;
+}
+
+#content .character .character_wrap li.char_category:hover .char_cast {
+    background-color: #6bb6c6;
+    transition: all .4s ease-out;
+}
+
+#content .character .character_wrap li.char_category:last-child {
+    margin-right: 0;
+}
+
+#content .character .character_wrap .char_cast {
+    height: 150px;
+    background-color: rgba(0, 0, 50, 0.9);
+    /*border-bottom-left-radius: 30px;*/
+    border-bottom-right-radius: 30px;
+    padding: 12% 9%;
+    box-sizing: border-box;
+    border-top: 5px solid #6bb6c6;
+}
+
+.on {
+    background-color: #6bb6c6 !important;
+}
+
+
+#content .character .character_wrap li.char_category > img {
+    width: 100%;
+    height: 150px;
+    display: block;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+}
+
+#content .character h4.char_name {
+    position: static;
+    font-size: 20px;
+    color: #fff;
+}
+
+#content .character .char_actor {
+    color: #eee;
+    margin-top: 27%;
+}
+
+#content .character .character_wrap li h3 {
+    font-size: 20px;
+}
+
+
+/*공통*/
+.margin {
+    margin-bottom: 19px;
+}
+
+#content .character h4 {
+    font-size: 30px;
+    font-weight: 700;
+    color: #fc0001;
+    margin-bottom: 8%;
+    line-height: 1.2em
+}
+
+#content .character p {
+    line-height: 1.5em;
+    font-size: 18px;
+}
+
+#content .character a {
+    display: block;
+}
+
+#content .character img {
+    width: 100%;
+}
+
+
+#content .ost_gallery {
+    background: url(../images/background.png) left no-repeat;
+    position: relative;
+    background-size: cover;
+    overflow: hidden;
+    clear: both;
+}
+
+#content .box {
+    background: rgba(0, 0, 0, 0.7);
+    position: absolute;
+    left: 5%;
+    top: 7%;
+    right: 5%;
+    bottom: 7%;
+    border-radius: 30px;
+}
+
+#content .ost {
+    padding: 12% 10% 10%;
+    position: relative;
+    z-index: 30;
+    overflow: hidden;
+}
+
+#content .ost h3 {
+    text-align: center;
+    font-size: 55px;
+    font-weight: 700;
+    color: #fff;
+    text-shadow: 3px 3px 2px rgba(0, 0, 0, 0.5);
+    margin-bottom: 7%;
+}
+
+#content .ost ul {
+    overflow: hidden;
+}
+
+#content .ost li {
+    float: left;
+    width: 21%;
+    margin: 0 2%;
+}
+
+#content .ost a {
+    display: block;
+}
+
+#content .ost a img {
+    width: 100%;
+    border-radius: 50%;
+    margin-bottom: 5%;
+    transition: all .8s;
+}
+
+#content .ost a:hover img {
+    transform: rotateY(180deg);
+}
+
+#content .ost p {
+    font-size: 22px;
+    color: #fff;
+    text-align: center;
+}
+
+#content .feature {
+    position: relative;
+    z-index: 30;
+    padding: 0 5% 12%;
+}
+
+#content .feature h3 {
+    text-align: center;
+    font-size: 55px;
+    font-weight: 700;
+    color: #fff;
+    text-shadow: 3px 3px 2px rgba(0, 0, 0, 0.5);
+    margin-bottom: 7%;
+}
+
+
+/*갤러리*/
+.feature .inWrap {
+    position: relative;
+}
+
+.feature .fInner {
+    margin: 0 auto;
+    width: 85%;
+    overflow: hidden;
+    padding-bottom: 1%;
+}
+
+.feature li {
+    float: left;
+    width: 400px;
+    height: 266px;
+    margin-bottom: 4em;
+    list-style: none;
+}
+
+.feature li a {
+    position: relative;
+    display: block;
+    background: #f0f0f0;
+    height: 100%;
+    margin: 0 3%;
+    box-shadow: 2px 2px 5px gray;
+    text-align: center;
+}
+
+.feature li span {
+    display: block;
+    position: absolute;
+    bottom: -3em;
+    width: 100%;
+    color: #fff;
+    font-size: 1em;
+    font-weight: 400;
+}
+
+.feature li:nth-child(1) a {
+    background: url(../images/fitem01.png) center center no-repeat;
+    background-size: cover;
+}
+
+.feature li:nth-child(2) a {
+    background: url(../images/fitem02.png) center center no-repeat;
+    background-size: cover;
+}
+
+.feature li:nth-child(3) a {
+    background: url(../images/fitem03.png) center center no-repeat;
+    background-size: cover;
+}
+
+.feature li:nth-child(4) a {
+    background: url(../images/fitem04.png) center center no-repeat;
+    background-size: cover;
+}
+
+.feature li:nth-child(5) a {
+    background: url(../images/fitem05.png) center center no-repeat;
+    background-size: cover;
+}
+
+.feature li:nth-child(6) a {
+    background: url(../images/fitem06.png) center center no-repeat;
+    background-size: cover;
+}
+
+.feature li:nth-child(7) a {
+    background: url(../images/fitem07.png) center center no-repeat;
+    background-size: cover;
+}
+
+.feature li:nth-child(8) a {
+    background: url(../images/fitem08.png) center center no-repeat;
+    background-size: cover;
+}
+
+.feature li:nth-child(9) a {
+    background: url(../images/fitem09.png) center center no-repeat;
+    background-size: cover;
+}
+
+.feature li:nth-child(10) a {
+    background: url(../images/fitem10.png) center center no-repeat;
+    background-size: cover;
+}
+
+.feature li:nth-child(11) a {
+    background: url(../images/fitem11.png) center center no-repeat;
+    background-size: cover;
+}
+
+
+.feature .swiper-pagination {
+    position: relative;
+    margin-top: 30px;
+}
+
+.feature .swiper-pagination-progress .swiper-pagination-progressbar {
+    background: #6ab8c4;
+}
+
+.feature .button div {
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    text-align: center;
+    top: 30%;
+    transition: all 0.2s;
+    z-index: 55;
+}
+
+.feature .button div:active {
+    transform: translate(2px, 2px);
+}
+
+.feature .button a {
+    display: block;
+    height: 100%;
+}
+
+.feature .back a {
+    font-size: 40px;
+    color: #fff;
+}
+
+.feature .next a {
+    font-size: 40px;
+    color: #fff;
+}
+
+.feature .back {
+    left: 1%;
+}
+
+.feature .next {
+    right: 1%;
+}
+
+.feature .view_more {
+    display: block;
+    color: #fff;
+    font-size: 24px;
+    text-align: center;
+    margin-top: 2%
+}
+
+
+
+
+
+/* 일반 pc */
+@media screen and (max-width:1280px) {
+
+    #content .story strong {
+        margin-bottom: 2%;
+        font-size: 20px;
+    }
+
+    #content .story p {
+        margin-bottom: 3%;
+        font-size: 20px;
+    }
+
+    #content .character h4 {
+        font-size: 24px;
+    }
+
+    #content .character p {
+        font-size: 16px;
+    }
+
+    #content .ost {
+        padding: 15% 10% 10%;
+    }
+
+    #content .feature {
+        padding: 0 5% 15%;
+    }
+
+    .feature .view_more {
+        font-size: 22px;
+    }
+}
+
+
+
+/* 테블릿 */
+@media screen and (max-width:1024px) {
+
+    /*트레일러*/
+    #content .trailer li {
+        float: left;
+        width: 48%;
+    }
+
+    #content .trailer li:nth-child(5) {
+        display: none;
+    }
+
+    #content .trailer li:nth-child(6) {
+        display: none;
+    }
+
+    #content .trailer a img {
+        margin-bottom: 2%;
+    }
+
+    /*캐릭터*/
+    #content .character li {
+        float: left;
+        width: 29.33%;
+        margin: 0 2%;
+    }
+
+    #content .character .character_wrap li.char_category {
+        width: 14.777777%;
+        margin: 0 1% 3%;
+    }
+
+    #content .ost li {
+        width: 29.33%;
+    }
+
+    #content .ost li:nth-child(4) {
+        display: none;
+    }
+
+    .feature .view_more {
+        font-size: 20px;
+    }
+}
+
+
+/* 소형 테블릿 */
+@media screen and (max-width:768px) {
+
+    /*스토리*/
+    #content .story h3 {
+        font-size: 40px;
+        margin-bottom: 5%;
+    }
+
+    #content .story strong {
+        display: block;
+        margin-bottom: 2%;
+        text-align: center;
+        font-size: 18px;
+    }
+
+    #content .story p {
+        text-align: center;
+        line-height: 1.5em;
+        margin-bottom: 5%;
+        font-size: 18px;
+    }
+
+    /*트레일러*/
+    #content .trailer h3 {
+        font-size: 40px;
+    }
+
+    #content .trailer div {
+        background-attachment: local;
+        height: 200px
+    }
+
+    /*캐릭터*/
+    #content .character h3 {
+        font-size: 40px;
+    }
+
+    #content .character .title_character {
+        background-attachment: local;
+        height: 200px;
+    }
+
+    #content .character .char_infoBox {
+        float: left;
+        width: 100%;
+        margin: 0 1%;
+    }
+
+    #content .character .char_infoBox .char_infoTxt {
+        width: 48%;
+    }
+
+    #content .character .char_infoBox .char_infoImg {
+        width: 48%;
+    }
+
+    #content .character .character_wrap .char_infoImg li {
+        width: 100%;
+    }
+
+    #content .character .char_infoBox .char_infoImg li:nth-of-type(1) {
+        display: none;
+    }
+
+    #content .character .char_infoBox .char_infoImg li:nth-of-type(3) {
+        display: none;
+    }
+
+    #content .character .character_wrap li.char_category {
+        width: 31%;
+        margin: 0 1% 3%;
+    }
+
+    #content .character li.char_category img {
+        width: 100%;
+    }
+
+    /*OST*/
+    #content .ost h3 {
+        font-size: 40px;
+        margin-bottom: 7%
+    }
+
+    #content .ost p {
+        font-size: 20px
+    }
+
+    #content .feature h3 {
+        font-size: 40px;
+        margin-bottom: 7%
+    }
+
+
+
+    .feature .view_more {
+        font-size: 18px;
+    }
+}
+
+
+
+/* 모바일 */
+@media screen and (max-width:640px) {
+
+    /*스토리*/
+    #content .story li {
+        float: none;
+    }
+
+    #content .story li:first-of-type {
+        height: 360px;
+        width: auto;
+        margin-right: 0;
+    }
+
+    #content .story li:last-of-type {
+        display: none;
+    }
+
+
+    #content .trailer li {
+        float: none;
+        width: auto;
+    }
+
+    #content .trailer li:nth-child(3) {
+        display: none;
+    }
+
+    #content .trailer li:nth-child(4) {
+        display: none;
+    }
+
+    #content .character li {
+        float: left;
+        width: 48%;
+        margin: 0 1%;
+    }
+
+    #content .character .character_wrap li.char_category {
+        width: 48%;
+        margin: 0 1% 3%;
+    }
+
+    #content .character p {
+        font-size: 14px;
+    }
+
+    #content .character .character_wrap li.char_category {
+        height: 220px;
+    }
+
+    #content .character .character_wrap .char_cast {
+        height: 100px;
+        padding: 8% 6%;
+    }
+
+    #content .character .character_wrap li.char_category > img {
+        height: 120px;
+    }
+
+    #content .character h4.char_name {
+        font-size: 16px;
+    }
+
+    #content .character .char_actor {
+        margin-top: 12%;
+    }
+
+
+    #content .ost {
+        padding: 20% 10% 10%
+    }
+
+    #content .feature {
+        padding: 0 5% 20%
+    }
+
+    #content .ost li {
+        width: 46%
+    }
+
+    #content .ost li:nth-child(3) {
+        display: none;
+    }
+
+    #content .ost p {
+        font-size: 18px;
+    }
+
+    .feature .view_more {
+        font-size: 16px;
+    }
+
+}
+
+/* 최소 사이즈 처리 */
+@media screen and (max-width:480px) {
+
+    .feature .fInner {
+        width: 95%;
+    }
+
+    .feature li {
+        width: 140px;
+        height: 210px;
+    }
+
+    .feature li span {
+        font-size: 1.1667em;
+    }
+
+    .feature .button {
+        display: none;
+    }
+
+}

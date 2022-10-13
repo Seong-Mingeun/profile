@@ -1,0 +1,279 @@
+@charset "utf-8";
+
+main {
+    width: 100%;
+    height: 420px;
+    background: url(../img/sub14/main_bg.png) no-repeat center/cover;
+    position: relative;
+    margin-top: 100px;
+}
+
+main:before {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 100%;
+    background-color: #000;
+    opacity: 0.3;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+main .main_inner {
+    width: 90%;
+    margin: 0 auto;
+    position: relative;
+}
+
+/*lnb*/
+main .lnb {
+    position: absolute;
+    top: 30px;
+    left: 0;
+}
+
+main .lnb .location {
+    width: 300px;
+    /*text-align: center;*/
+}
+
+main .lnb .location > li {
+    float: left;
+    position: relative;
+    color: #fff;
+    font-size: 14px;
+}
+
+main .lnb .location > li:before {
+    content: "";
+    display: block;
+    width: 2px;
+    height: 12px;
+    background-color: #fff;
+    position: absolute;
+    top: 4px;
+    left: 0px;
+}
+
+main .lnb .location > li:nth-child(2) {
+    width: 70px;
+    padding-left: 12px;
+    padding-right: 0px;
+}
+
+main .lnb .location > li:last-child {
+    width: 140px;
+    padding-left: 16px;
+}
+
+main .lnb .location > li:first-child:before {
+    display: none;
+}
+
+main .lnb .location > li:last-child:before {
+    margin-left: 5px;
+}
+
+main .lnb .location .home {
+    width: 30px;
+}
+
+main .lnb .location .home a img {
+    width: 20px;
+    display: block;
+}
+
+main .main_title {
+    padding-top: 100px;
+    text-align: center;
+    color: #fff;
+}
+
+main .main_title h2 {
+    font-size: 32px;
+    margin-bottom: 40px;
+}
+
+main .main_title p {
+    line-height: 1.6;
+    font-size: 24px;
+}
+
+/*전체, 검색*/
+.board {
+    width: 80%;
+    max-width: 1280px;
+    margin: 120px auto 0;
+    color: #333;
+}
+
+.board h2 {
+    font-size: 32px;
+    text-align: center;
+    position: relative;
+    /*outline: 1px solid blue;*/
+}
+
+.board > h2::after {
+    content: "";
+    display: block;
+    width: 36px;
+    height: 3px;
+    background-color: #e16254;
+    position: absolute;
+    top: 180%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.search_wrap {
+    margin-top: 120px;
+    position: relative;
+}
+
+.search_wrap .search_box {
+    text-align: center;
+}
+
+.search_wrap .search_box select {
+    width: 160px;
+    height: 55px;
+    padding: 0 12px 0 6px;
+    border: 1px solid #ccc;
+}
+
+.search_wrap .search_box input {
+    width: 400px;
+    height: 55px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+    margin-left: 6px;
+    padding: 0 12px 0 8px;
+}
+
+.search_wrap .search_box input::placeholder {
+    color: #333;
+}
+
+.search_wrap button {
+    background: #e16254 url(../img/sub14/icon_search.png) no-repeat center;
+    font-size: 0;
+    width: 55px;
+    height: 55px;
+    float: right;
+    position: absolute;
+    top: 0;
+    right: 21%;
+    cursor: pointer;
+    border: none;
+}
+
+
+table {
+    margin-top: 40px;
+    width: 1280px;
+    /*    outline: 2px solid red;*/
+}
+
+table th {
+    text-align: center;
+    background-color: rgba(225, 98, 84, 0.8);
+}
+
+table th,
+td {
+    padding: 15px;
+}
+
+table th:nth-child(1) {
+    width: 80px;
+}
+
+table th:nth-child(2) {
+    width: 800px;
+}
+
+table th:nth-child(3) {
+    width: 180px;
+}
+
+table th:nth-child(4) {
+    width: 140px;
+}
+
+table th:nth-child(5) {
+    width: 80px;
+}
+
+table tr > td {
+    text-align: center;
+    border-bottom: 1px solid #eee;
+}
+
+table tr > td:nth-child(2) {
+    text-align: left;
+}
+
+/* pagination */
+.pagination {
+    margin-top: 80px;
+    text-align: center;
+}
+
+.pagination .pagination_num {
+    display: inline-block;
+    border: 1px solid #e16254;
+    border-radius: 100px;
+    padding: 8px 16px;
+    margin-right: 6px;
+}
+.on {
+    background-color: #e16254;
+    color: #fff;
+    font-weight: bold;
+}
+.write_btn {
+    width: 1280px;
+    margin-top: 60px;
+}
+
+.write_btn button {
+    padding: 15px;
+    float: right;
+    border: none;
+    background-color: #e16524;
+    color: #fff;
+    font-weight: bold;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+/*top버튼*/
+#tbtn {
+    width: 80px;
+    height: 80px;
+    background: url(../../img/top.png) no-repeat;
+    border: none;
+    border-radius: 50%;
+    font-weight: bold;
+    font-size: 18px;
+    letter-spacing: -0.2px;
+    position: relative;
+    top: 80%;
+    left: 91%;
+    cursor: pointer;
+    transition: all 0.5s ease-out;
+    animation: tmove 1.5s infinite alternate linear;
+    box-shadow: 4px 7px 10px #999;
+}
+
+@keyframes tmove {
+    0% {
+        top: 80%;
+    }
+
+    100% {
+        top: 81%;
+    }
+}

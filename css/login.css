@@ -1,0 +1,158 @@
+@charset 'utf-8';
+
+section#login {
+  width: 100%;
+  margin-top: 100px;
+  padding: 80px 0;
+  box-sizing: border-box;
+  background: url(../img/register_bg.png) no-repeat top/cover;
+  /*color: #fff;*/
+}
+section#login .inner-section {
+  width: 80%;
+  max-width: 1280px;
+  height: 80%;
+  background-color: rgba(255, 255, 255, 0.7);
+  margin: 0 auto;
+  border-radius: 20px;
+  padding: 40px 0;
+  box-sizing: border-box;
+}
+
+section#login .inner-section h2 {
+  text-align: center;
+  font-size: 32px;
+  font-size: 2rem;
+  margin-bottom: 60px;
+  color: #333;
+  position: relative;
+}
+section#login .inner-section h2::after {
+  content: "";
+  display: block;
+  width: 36px;
+  height: 3px;
+  background-color: #e16254;
+  position: absolute;
+  top: 180%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+section#login .inner-section .loginBox {
+  width: 630px;
+  margin: 80px auto 0;
+  background-color: #fff;
+  padding-top: 30px;
+}
+
+.loginBox .welcome {
+  text-align: center;
+  color: #333;
+  font-size: 18px;
+  padding-bottom: 30px;
+  border-bottom: 0.6px solid #eee;
+  position: relative;
+  padding-left: 60px;
+}
+.loginBox .welcome::before {
+  content: "";
+  display: block;
+  width: 130px;
+  height: 100%;
+  padding-top: 30px;
+  background: url(../img/icon_arong.png) no-repeat;
+  background-size: 88px;
+  position: absolute;
+  bottom: 0;
+  left: 10px;
+  /*outline: 1px solid red;*/
+}
+.loginBox .welcome span {
+  color: #e16524;
+  font-weight: bold;
+}
+
+.loginBox form {
+  padding: 20px 20px;
+}
+
+.loginBox form .id input,
+.loginBox form .password input {
+  width: 100%;
+  height: 50px;
+  margin-bottom: 10px;
+  padding-left: 10px;
+  box-sizing: border-box;
+  border: 1px solid #eee;
+  border-radius: 10px;
+}
+
+/*placeholder 색상변경*/
+input::placeholder {
+  color: #999;
+}
+
+.loginBox form label {
+  display: block;
+  color: #333;
+  margin-bottom: 30px;
+  font-size: 14px;
+}
+.loginBox form label input {
+  margin-right: 6px;
+  vertical-align: bottom;
+  /*outline: 1px solid green;*/
+}
+.loginBox form label input[type="checkbox"] {
+  width: 18px;
+  height: 18px;
+}
+
+.loginBox form .btngrp {
+  width: 100%;
+}
+.loginBox form .btn {
+  width: 48%;
+  height: 50px;
+  margin-right: 3.2%;
+  border: 0;
+  line-height: 50px;
+  background-color: #e16254;
+  font-size: 20px;
+  text-align: center;
+  color: #fff;
+  border-radius: 50px;
+  cursor: pointer;
+  margin-bottom: 30px;
+}
+.loginBox form .btn:last-child {
+  margin-right: 0;
+}
+
+.sign p {
+  color: #333;
+  font-size: 16px;
+    text-align: center;
+}
+.sign .user_name {
+  color: #555;
+  font-size: 20px;
+  padding-right: 10px;
+  vertical-align: baseline;
+}
+.sign button {
+    display: block;
+    border: 0;
+    background-color: #e16254;
+    color: #fff;
+    font-size: 18px;
+    border-radius: 50px;
+    cursor: pointer;
+    width: 48%;
+    height:  50px;
+    margin: 24px auto;
+}
+
+footer {
+    margin-top: 0;
+}

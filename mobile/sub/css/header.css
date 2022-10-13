@@ -1,0 +1,223 @@
+@charset "utf-8";
+
+header {
+    width: 100%;
+    height: 60px;
+    background-color: rgb(255, 255, 255);
+    position: fixed;
+    left: 0;
+    top: 0;
+    border-bottom: 1px solid #eee;
+    z-index: 9999;
+}
+
+header .header_inner {
+    width: 90%;
+    height: 100%;
+    margin: 0 auto;
+    position: relative;
+    /*예매버튼, 햄버거 버튼 기준*/
+    /*outline: 2px solid #f00;*/
+}
+
+header .header_inner h1 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: inline-block;
+    /*outline: 1px solid green;*/
+}
+
+header .header_inner h1 #logo img {
+    width: 85px;
+}
+
+/*햄버거 버튼*/
+header .header_inner .menu_toggle {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 2%;
+    cursor: pointer;
+}
+
+header .header_inner .menu_toggle span:after {
+    content: "";
+    display: block;
+    width: 26px;
+    height: 4px;
+    background-color: #e16254;
+    border-radius: 100px;
+    margin-bottom: 4px;
+}
+
+header .header_inner .ticket {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 2%;
+}
+
+header .header_inner .ticket img {
+    height: 45px;
+}
+
+/*navigation*/
+nav {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 100%;
+}
+
+/*로그인/회원가입*/
+.utility {
+    width: 100%;
+    height: 100px;
+    color: #333;
+    background-color: #e16254;
+    padding: 16px 6px;
+}
+
+.utility h2 {
+    position: relative;
+    padding: 6px 12px 12px 8px;
+    font-size: 16px;
+    font-size: 1rem;
+}
+
+.utility h2 .clbt {
+    content: "";
+    display: block;
+    width: 20px;
+    height: 20px;
+    background: url(../../img/close_btn.png) no-repeat center;
+    background-size: 14px;
+    position: absolute;
+    top: 16%;
+    /*transform: translateY(-50%);*/
+    right: 6%;
+    cursor: pointer;
+}
+
+.utility ul {
+    margin-left: 10px;
+}
+
+.utility li {
+    display: block;
+    /*width: 105px;*/
+    border: 1px solid #333;
+    border-radius: 50px;
+    margin-right: 12px;
+    margin-top: 10px;
+    text-align: center;
+    float: left;
+}
+
+.utility li a {
+    font-size: 14px;
+    font-size: 0.875rem;
+    letter-spacing: 0.4px;
+    padding: 8px 18px;
+}
+
+/*서브 메뉴*/
+nav .gnb {
+    width: 100%;
+    height: 1000px;
+    background-color: #fff;
+    /*outline: 5px solid green;*/
+}
+
+nav .gnb > li {
+    position: relative;
+    border-bottom: 1px solid #ccc;
+    text-indent: 12px;
+    font-size: 16px;
+    font-size: 1rem;
+    /*   outline: 1px solid #000;*/
+    padding: 8px 0;
+    box-sizing: border-box;
+    position: relative;
+    /*padding: 24px 0;*/
+}
+
+/*nav .gnb > li::after {
+    content: "";
+    display: block;
+    width: 40px;
+    height: 40px;
+    background: url(../img/icon_down.png) no-repeat;
+    background-size: 20px;
+    position: absolute;
+    top: 23px;
+    right: 1%;
+    cursor: pointer;
+}*/
+
+nav .gnb > li > a {
+    width: 100%;
+    height: 50px;
+    line-height: 50px;
+}
+
+/*nav .gnb > li > a > span {
+    content: "";
+    display: block;
+    width: 40px;
+    height: 40px;
+    background: url(../../img/icon_down.png) no-repeat center center;
+    background-size: 20px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 1%;
+    cursor: pointer;
+    transition: all .6s;
+}*/
+
+nav .gnb > li > a>img {
+    width: 20px;
+    float: right;
+    margin-top: 14px;
+    margin-right: 22px;
+   /* height: 20px;*/
+/*    float: left;
+    margin-top: 14px;*/
+   /* outline: 1px solid blue;*/
+    /*float: right;*/
+   /* position: absolute;
+    top: 50%;
+    transform: translateY(-50%);*/
+   /* right: 4%;*/
+    cursor: pointer;
+    transition: all .6s;
+}
+nav .gnb > li > a>img.rotate {
+    transform: rotate(-180deg);
+}
+
+nav .gnb .submenu {
+    display: none;
+}
+
+nav .gnb .submenu li {
+    /*   background-color: #fdf6dd;*/
+    text-indent: 24px;
+    /*  display: none;*/
+}
+
+nav .gnb .submenu li:last-child {
+    border-bottom: 0;
+    padding-bottom: 14px;
+}
+
+nav .gnb .submenu li a {
+    height: 40px;
+    line-height: 40px;
+    font-size: 14px;
+    font-size: 0.875rem;
+}

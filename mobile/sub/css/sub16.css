@@ -1,0 +1,325 @@
+@charset "utf-8";
+
+main {
+    width: 100%;
+    height: 420px;
+    background: url(../img/sub16/main_bg.png) no-repeat center/cover;
+    position: relative;
+    margin-top: 100px;
+}
+
+main:before {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 100%;
+    background-color: #000;
+    opacity: 0.3;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+main .main_inner {
+    width: 90%;
+    margin: 0 auto;
+    position: relative;
+}
+
+/*lnb*/
+main .lnb {
+    position: absolute;
+    top: 30px;
+    left: 0;
+}
+
+main .lnb .location {
+    width: 300px;
+    /*text-align: center;*/
+}
+
+main .lnb .location > li {
+    float: left;
+    position: relative;
+    color: #fff;
+    font-size: 14px;
+}
+
+main .lnb .location > li:before {
+    content: "";
+    display: block;
+    width: 2px;
+    height: 12px;
+    background-color: #fff;
+    position: absolute;
+    top: 4px;
+    left: 0px;
+}
+main .lnb .location > li:nth-child(2) {
+    width: 70px;
+    padding-left: 12px;
+    padding-right: 0px;
+}
+
+main .lnb .location > li:last-child {
+    width: 140px;
+    padding-left: 16px;
+}
+
+main .lnb .location > li:first-child:before {
+    display: none;
+}
+main .lnb .location > li:last-child:before {
+    margin-left: 5px;
+}
+
+main .lnb .location .home {
+    width: 30px;
+}
+
+main .lnb .location .home a img {
+    width: 20px;
+    display: block;
+}
+
+main .main_title {
+    padding-top: 100px;
+    text-align: center;
+    color: #fff;
+}
+
+main .main_title h2 {
+    font-size: 32px;
+    margin-bottom: 40px;
+}
+
+main .main_title p {
+    line-height: 1.6;
+    font-size: 24px;
+}
+
+
+/*section*/
+section {
+	width: 1280px;
+	margin: 144px auto 0;
+}
+
+.notice {
+	width: 100%;
+	height: 320px;
+	border: 1px solid #ccc;
+	border-top: 3px solid #e16254;
+	padding: 24px 20px;
+	background-color: #eee;
+	background: url(../img/sub16/notice_bg.png) no-repeat bottom/cover;
+	box-sizing: border-box;
+}
+
+
+
+.notice>h2 {
+	font-size: 26px;
+	padding-bottom: 20px;
+	border-bottom: 1px solid #ccc;
+}
+
+.notice .notice_list {
+	width: 100%;
+	font-size: 18px;
+	margin-top: 20px;
+}
+.notice .notice_list li {
+	margin-bottom: 16px;
+}
+.notice .notice_list li a {
+	font-size: 16px;
+	margin-top: 6px;
+	display: inline-block;
+}
+.notice .notice_list li a:hover {
+	color: #e16254;
+}
+
+/*inquiry*/
+.inquiry {
+	width: 100%;
+	margin-top: 120px;
+}
+.inquiry form {
+	width: 100%;
+	border-top: 3px solid #e16254;
+}
+.inquiry form table {
+	width: 100%;
+	border-collapse: collapse;
+}
+.inquiry form table tr {
+	border-bottom: 1px solid #ccc;
+}
+.inquiry form table tr th {
+	width: 20%;
+	padding: 22px 20px;
+	font-size: 20px;
+	text-align: left;
+	background-color: #eee;
+	font-weight: 400;
+}
+
+.inquiry form table tr td {
+	padding-left: 28px;
+}
+.inquiry form table tr td select {
+	width: 300px;
+	height: 50px;
+	text-indent: 6px;
+	font-size: 16px;
+	border: 1px solid #ccc;
+}
+.inquiry form table tr td input {
+	width: 500px;
+	height: 50px;
+	font-size: 16px;
+	padding: 0 12px;
+	border: 1px solid #ccc;
+	box-sizing: border-box;
+}
+.inquiry form table tr td input[type=text] {
+    outline: none;
+}
+.inquiry form table tr td.email input {
+	width: 230px;
+}
+.inquiry form table tr td.email span {
+	padding: 0 12px;
+	color: #ccc;
+}
+.inquiry form table tr td.title input {
+	width: 100%;
+}
+.inquiry form table tr td.content textarea {
+	width: 100%;
+	height: 360px;
+	margin: 16px 0;
+	padding: 8px 12px;
+	box-sizing: border-box;
+	border: 1px solid #ccc;
+	font-family: 'Noto Sans KR', sans-serif;
+	font-size: 16px;
+	outline: none;
+}
+
+.inquiry form table tr td.file>p{
+	width: 100px;
+	height: 20px;
+	text-align: center;
+	padding: 18px 6px;
+	background-color: #e16254;
+	color: #fff;
+	border: 1px solid #ccc;
+	overflow: hidden;
+	cursor: pointer;
+	position: relative;
+}
+.inquiry form table tr td.file input{
+	border: 0;
+	width: 100px;
+	height: 20px;
+	position: absolute;
+	top: 30%;
+	left: 0;
+	/*opacity: 0;*/
+	text-indent: 9999px;
+	cursor: pointer;
+}
+.inquiry form .agree {
+	margin-top: 60px;
+}
+.inquiry form .agree h2 {
+	font-size: 24px;
+	margin-bottom: 20px;
+}
+
+.inquiry form .agree .agree_text {
+	border: 1px solid #ccc;
+	margin-bottom: 20px;
+	width: 100%;
+	height: 300px;
+	overflow-y: scroll;
+	padding: 16px 22px;
+	box-sizing: border-box;
+}
+.inquiry form .agree .agree_text li.agree_title {
+	font-size: 18px;
+	margin-bottom: 20px;
+	font-weight: 700;
+}
+.inquiry form .agree .agree_text li {
+	line-height: 1.8;
+	font-size: 16px;
+}
+.inquiry form .agree .agree_text li~li {
+	margin-bottom: 30px;
+}
+
+.inquiry form .agree .agree_text li.agree_info {
+	color: #e16254;
+	font-size: 16px;
+    margin-bottom: 0;
+}
+.inquiry form .agree .agreeBtn {
+	text-align: right;
+	font-size: 16px;
+}
+
+.inquiry form .agree .agreeBtn input {
+	margin-right: 7px;
+	width: 15px;
+	height: 15px;
+}
+.btnGroup {
+	width: 100%;
+	text-align: center;
+}
+.btnGroup .btn {
+	width: 180px;
+	padding: 14px 40px;
+	border: 1px solid #e16254;
+	background-color: #fff;
+	border-radius: 50px;
+	font-size: 16px;
+	cursor: pointer;
+	margin: 120px 20px 0 0;
+}
+.btnGroup .register {
+	background-color: #e16254;
+	color: #fff;
+}
+
+/*top버튼*/
+#tbtn {
+    width: 80px;
+    height: 80px;
+    background: url(../../img/top1.png) no-repeat;
+    border: none;
+    border-radius: 50%;
+    font-weight: bold;
+    font-size: 18px;
+    letter-spacing: -0.2px;
+    position: relative;
+    top: 80%;
+   left: 93%;
+    cursor: pointer;
+    transition: all .5s ease-out;
+    animation: tmove 1.5s infinite alternate linear;
+    box-shadow: 4px 7px 10px #999;
+}
+
+@keyframes tmove {
+    0% {
+        top: 80%;
+    }
+    100% {
+        top: 81%;
+    }
+}

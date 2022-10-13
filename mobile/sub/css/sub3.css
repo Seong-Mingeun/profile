@@ -1,0 +1,301 @@
+@charset "utf-8";
+
+/*main*/
+main {
+    width: 100%;
+    height: 192px;
+    background: url(../img/sub3/main_bg.png) no-repeat top/cover;
+    position: relative;
+    margin-top: 60px;
+}
+
+main:before {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 100%;
+    background-color: #000;
+    opacity: 0.3;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+main .main_inner {
+    width: 90%;
+    margin: 0 auto;
+    position: relative;
+}
+
+
+main .main_title {
+    padding-top: 28px;
+    text-align: center;
+    color: #fff;
+}
+
+main .main_title h2 {
+    font-size: 18px;
+    font-size: 1.125rem;
+    margin-bottom: 16px;
+}
+
+main .main_title p {
+    line-height: 1.8;
+    font-size: 12px;
+    font-size: 0.75rem;
+    word-break: keep-all;
+}
+
+
+/*res_title*/
+.res_title {
+    /*width: 80%;*/
+    width: 100%;
+    height: 40px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    background-color: rgba(255, 255, 255, 0.8);
+}
+
+.res_title ul {
+    width: 90%;
+    margin: 0 auto;
+    line-height: 40px;
+    position: relative;
+}
+
+.res_title ul:before {
+    content: "";
+    display: block;
+    width: 1px;
+    height: 24px;
+    background-color: #999;
+    position: absolute;
+    top: 9px;
+}
+
+.res_title ul:after {
+    content: "";
+    display: block;
+    width: 1px;
+    height: 24px;
+    background-color: #999;
+    position: absolute;
+    top: 9px;
+    right: 0;
+}
+
+.res_title li {
+    float: left;
+    width: 20%;
+    text-align: center;
+    box-sizing: border-box;
+    position: relative;
+}
+
+.res_title li:after {
+    content: "";
+    display: block;
+    width: 1px;
+    height: 24px;
+    background-color: #999;
+    position: absolute;
+    right: 0;
+    top: 9px;
+}
+
+.res_title li:last-child:after {
+    display: none;
+}
+
+.res_title li.active a {
+    color: #e16254;
+}
+
+.res_title li a {
+    font-size: 11px;
+    font-size: 0.6875rem;
+}
+
+
+/*section*/
+#world {
+    /*display: none;*/
+}
+
+#adventure {
+    display: none;
+}
+
+#character {
+    display: none;
+}
+
+#tomorrow {
+    display: none;
+}
+
+#samchulli {
+    display: none;
+}
+
+/*음식점 및 상점*/
+.restaurant {
+    width: 90%;
+    margin: 60px auto;
+    color: #333;
+}
+
+.restaurant .title {
+    font-size: 20px;
+    font-size: 1.25rem;
+    margin-bottom: 30px;
+}
+
+.restaurant .title span {
+    color: #999;
+    font-weight: 100;
+    margin-left: 12px;
+    font-size: 16px;
+    font-size: 1rem;
+    font-style: italic;
+}
+
+.restaurant .restaurant_wrap {
+    width: 100%;
+    border-bottom: 1px solid #ccc;
+    margin-bottom: 40px;
+}
+
+.restaurant .restaurant_wrap:last-child {
+    border-bottom: 0;
+}
+
+/*카테고리 이름*/
+.restaurant .restaurant_wrap .name {
+    font-size: 20px;
+    font-size: 1.25rem;
+    margin-bottom: 30px;
+    position: relative;
+}
+
+
+.restaurant .restaurant_wrap .name .category {
+    width: 24px;
+    vertical-align: top;
+    margin-right: 4px;
+    border-left: 3px solid #e16254;
+    padding: 3px 6px;
+    display: inline-block;
+}
+
+/*각 박스*/
+.restaurant_wrap .restaurant_box {
+    width: 48%;
+    height: 200px;
+    margin-bottom: 40px;
+    margin-right: 4%;
+    position: relative;
+    border: 2px solid #e16254;
+    border-top-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+    float: left;
+    box-sizing: border-box;
+    /*outline: 1px solid red;*/
+}
+
+/*기프트샵 높이조절*/
+#gift .restaurant_box{
+    height: 172px;
+}
+
+.restaurant_wrap .restaurant_box:nth-child(3n), .restaurant_wrap .restaurant_box:nth-child(5) {
+    margin-right: 0;
+}
+
+
+.restaurant_wrap .restaurant_box .largeimg {
+     width: 100%;
+    height: 120px;
+    display: block;
+    border-top-left-radius: 30px;
+}
+
+
+.restaurant_wrap .restaurant_box .restaurant_des {
+    margin-top: 8px;
+}
+
+.restaurant_des h3 {
+    margin-left: 8px;
+    margin-bottom: 8px;
+    font-size: 14px;
+    font-size: 0.875rem;
+    letter-spacing: 1.2px;
+}
+
+
+.restaurant_des .menu {
+    margin-left: 8px;
+    white-space: nowrap;
+}
+
+.restaurant_des .menu img {
+    width: 20px;
+    display: inline-block;
+    background-color: #e16254;
+    float: left;
+}
+
+.restaurant_des .menu p {
+    text-indent: 5px;
+    font-size: 12px;
+    font-weight: 700;
+    margin-top: -2px;
+}
+
+.restaurant_des .menu p span {
+    display: block;
+    font-size: 10px;
+    color: #555;
+    margin-left: 22px;
+    font-weight: 400;
+}
+
+
+/*top버튼*/
+#tbtn {
+    width: 45px;
+    height: 45px;
+    background: url(../../img/top.png) no-repeat;
+    background-size: 45px;
+    border: none;
+    border-radius: 50%;
+    font-weight: bold;
+    font-size: 14px;
+    font-size: 0.875rem;
+    letter-spacing: -0.2px;
+    position: relative;
+    top: 80%;
+    left: 87%;
+    cursor: pointer;
+    transition: all .5s ease-out;
+    animation: tmove 1.5s infinite alternate linear;
+    box-shadow: 4px 7px 10px #999;
+}
+
+@keyframes tmove {
+    0% {
+        top: 80%;
+    }
+
+    100% {
+        top: 81%;
+    }
+}
+
+footer {
+    margin-top: 0;
+}

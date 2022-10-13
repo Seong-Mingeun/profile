@@ -1,0 +1,420 @@
+@charset "utf-8";
+
+main {
+	width: 100%;
+	height: 420px;
+	background: url(../img/sub5/main_bg.png) no-repeat center/cover;
+	position: relative;
+	margin-top: 100px;
+}
+
+main:before {
+	content: "";
+	display: block;
+	width: 100%;
+	height: 100%;
+	background-color: #000;
+	opacity: 0.3;
+	position: absolute;
+	left: 0;
+	top: 0;
+}
+
+main .main_inner {
+    width: 90%;
+    margin: 0 auto;
+    position: relative;
+}
+
+/*lnb*/
+main .lnb {
+    position: absolute;
+    top: 30px;
+    left: 0;
+}
+main .lnb .location {
+    width: 300px;
+    /*text-align: center;*/
+}
+
+main .lnb .location > li {
+    float: left;
+    position: relative;
+	color: #fff;
+	font-size: 14px;
+}
+
+main .lnb .location > li:before {
+    content: "";
+    display: block;
+    width: 2px;
+    height: 12px;
+    background-color: #fff;
+    position: absolute;
+    top: 4px;
+    left: 0px;
+}
+main .lnb .location > li:nth-child(2) {
+    width: 65px;
+    padding-left: 12px;
+    padding-right: 0px;
+}
+main .lnb .location > li:last-child {
+    width: 140px;
+    padding-left: 16px;
+}
+
+main .lnb .location > li:first-child:before {
+	display: none;
+}
+main .lnb .location > li:last-child:before {
+	margin-left: 6px;
+}
+
+main .lnb .location .home {
+    width: 30px;
+}
+
+main .lnb .location .home a img {
+    width: 20px;
+    display: block;
+}
+
+main .main_title {
+    padding-top: 100px;
+    text-align: center;
+    color: #fff;
+}
+
+main .main_title h2 {
+	font-size: 32px;
+	margin-bottom: 40px;
+}
+
+main .main_title p {
+	line-height: 1.6;
+	font-size: 24px;
+}
+
+
+/*section*/
+/*가입 발급절차*/
+.register {
+    width: 80%;
+	max-width: 1280px;
+	margin: 120px auto 0;
+	color: #333;
+}
+
+.register > h2 {
+	text-align: center;
+	font-size: 32px;
+	position: relative;
+}
+
+.register > h2::after {
+	content: "";
+	display: block;
+	width: 36px;
+	height: 3px;
+	background-color: #e16254;
+	position: absolute;
+	top: 180%;
+	left: 49%;
+	transform: translateX(-50%);
+}
+
+.register .register_step {
+	width: 100%;
+	margin-top: 120px;
+}
+
+.register .register_step li {
+	float: left;
+	width: 23%;
+	margin-right: 2%;
+	position: relative;
+}
+
+.register .register_step li:after {
+	content: "";
+	display: block;
+	width: 40px;
+	height: 40px;
+	background: url(../img/sub5/icon_rightarrow.png) no-repeat;
+	position: absolute;
+	top: 50%;
+	left: -10%;
+	transform: translateY(-50%);
+}
+
+.register .register_step li:first-child::after {
+	display: none;
+}
+
+.register .register_step li:last-child {
+	margin-right: 0;
+}
+
+.register .register_step li h3 {
+	font-size: 26px;
+	text-align: center;
+	position: relative;
+	letter-spacing: 1.8px;
+}
+
+.register .register_step li h3::after {
+	content: "";
+	display: block;
+	width: 110px;
+	height: 12px;
+	background-color: rgba(225, 98, 84, 0.8);
+	position: absolute;
+	top: 56%;
+	left: 31%;
+	z-index: -1;
+}
+
+.register .register_step li img {
+	display: block;
+	/*width: 70px;*/
+	margin: 40px auto 0;
+}
+
+.register .register_text {
+	width: 100%;
+	text-align: center;
+	margin: 20px auto 0;
+}
+
+.register .register_text h4 {
+	font-size: 20px;
+	margin-bottom: 16px;
+	color: #e16254;
+}
+
+.register .register_text p {
+	width: 100%;
+	font-size: 18px;
+}
+
+/*연간이용권*/
+.membership {
+    width: 80%;
+	max-width: 1280px;
+	margin: 180px auto 0;
+	color: #333;
+}
+
+.membership > h2 {
+	text-align: center;
+	font-size: 32px;
+	position: relative;
+}
+
+.membership > h2::after {
+	content: "";
+	display: block;
+	width: 36px;
+	height: 3px;
+	background-color: #e16254;
+	position: absolute;
+	top: 180%;
+	left: 50%;
+	transform: translateX(-50%);
+}
+/*연간이용권 - 탭메뉴*/
+.membership .member_tabmenu {
+	width: 100%;
+	margin-top: 80px;
+}
+.membership .member_tabmenu li {
+	width: 33.33%;
+	float: left;
+	text-align: center;
+	border: 1px solid #ccc;
+	box-sizing: border-box;
+	padding: 14px 0;
+	border-top-right-radius: 20px;
+	border-top-left-radius: 20px;
+	background-color: #eee;
+	opacity: 0.4;
+}
+
+.membership .member_tabmenu li a {
+	font-size: 18px;
+    display: inline-block;
+}
+.membership .member_tabmenu li a img {
+	width: 260px;
+    display: inline-block;
+	margin: 0 auto 12px;
+}
+
+.membership .member_tabmenu li.active {
+	opacity: 1;
+	border: 1px solid #e16254;
+}
+.membership .member_tabmenu li.active a {
+	color: #e16254;
+}
+/*혜택 안내*/
+.member_box {
+	width: 100%;
+	margin-top: 80px;
+}
+
+.member_list {
+    display: none;
+}
+
+.on {
+    display: block;
+}
+
+.member_list .member_title {
+	width: 50%;
+	float: left;
+}
+
+.member_title .member_con h2 {
+	font-size: 24px;
+}
+.member_title .member_con ul {
+	width: 80%;
+	margin-top: 40px;
+}
+.member_title .member_con ul li {
+	float: left;
+	width: 25%;
+	height: 150px;
+    background-color: #eee;
+	font-size: 18px;
+	padding: 14px 10px;
+	border-right: 1px solid #ccc;
+	border-bottom: 1px solid #ccc;
+	box-sizing: border-box;
+	font-size: 14px;
+	text-align: center;
+}
+.member_title .member_con ul li:nth-child(4n) {
+	border-right: 0;
+}
+
+.member_title .member_con ul li img {
+	display: block;
+    width: 80px;
+    margin: 0 auto;
+}
+/*요금 안내*/
+.member_list .member_fee {
+	width: 50%;
+	float: left;
+}
+
+.member_fee>h2 {
+	font-size: 26px;
+	margin-bottom: 20px;
+}
+.member_fee table {
+    border: 1px solid #ccc;
+    border-top: 3px solid #e16254;
+    width: 100%;
+    margin-top: 39px;
+    border-collapse: collapse;
+}
+
+.member_fee thead {
+    width: 100%;
+    height: 70px;
+    background-color: rgba(225, 98, 84, 0.4);
+}
+.member_fee thead th {
+	border: 1px solid #f0f0f0;
+	font-size: 16px;
+	font-weight: 400;
+}
+.member_fee thead th span {
+	display: block;
+	font-size: 12px;
+	color: #e16254;
+	letter-spacing: -0.8px;
+}
+.member_fee thead th.row2 {
+	width: 20%;
+}
+.member_fee thead th.row3 {
+	width: 20%;
+}
+.member_fee thead th.row4 {
+	width: 20%;
+}
+.member_fee tbody th {
+    width: 20%;
+    height: 60px;
+	font-weight: 400;
+}
+
+.member_fee table tbody th,
+.member_fee table tbody td {
+    border: 1px solid #ccc;
+    text-align: center;
+}
+
+.member_fee table tbody tr:last-child td {
+    padding: 18px 12px;
+    box-sizing: border-box;
+}
+.member_fee table tbody tr:last-child td li {
+    margin-bottom: 16px;
+    line-height: 1.6;
+    text-align: left;
+}
+.member_fee .member_info {
+	color: #e16254;
+}
+
+.annualBtn {
+	width: 240px;
+	margin: 120px auto 0;
+	text-align: center;
+	border: 1px solid #e16254;
+	border-radius: 50px;
+}
+.annualBtn a {
+	padding: 12px 40px;
+	border-radius: 50px;
+}
+.annualBtn a:hover {
+	color: #fff;
+	background-color: #e16254;
+}
+
+
+/*top버튼*/
+#tbtn {
+    width: 80px;
+    height: 80px;
+    background: url(../../img/top.png) no-repeat;
+    border: none;
+    border-radius: 50%;
+    font-weight: bold;
+    font-size: 18px;
+    letter-spacing: -0.2px;
+    position: relative;
+    top: 80%;
+   left: 91%;
+    cursor: pointer;
+    transition: all .5s ease-out;
+    animation: tmove 1.5s infinite alternate linear;
+    box-shadow: 4px 7px 10px #999;
+}
+
+@keyframes tmove {
+    0% {
+        top: 80%;
+    }
+    100% {
+        top: 81%;
+    }
+}

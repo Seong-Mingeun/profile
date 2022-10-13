@@ -1,0 +1,271 @@
+@charset "utf-8";
+
+main {
+    width: 100%;
+    height: 420px;
+    background: url(../img/sub14/main_bg.png) no-repeat center/cover;
+    position: relative;
+    margin-top: 100px;
+}
+
+main:before {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 100%;
+    background-color: #000;
+    opacity: 0.3;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+main .main_inner {
+    width: 90%;
+    margin: 0 auto;
+    position: relative;
+}
+
+/*lnb*/
+main .lnb {
+    position: absolute;
+    top: 30px;
+    left: 0;
+}
+
+main .lnb .location {
+    width: 300px;
+    /*text-align: center;*/
+}
+main .lnb .location > li {
+    float: left;
+    position: relative;
+    color: #fff;
+    font-size: 14px;
+}
+
+main .lnb .location > li:before {
+    content: "";
+    display: block;
+    width: 2px;
+    height: 12px;
+    background-color: #fff;
+    position: absolute;
+    top: 4px;
+    left: 0px;
+}
+main .lnb .location > li:nth-child(2) {
+    width: 70px;
+    padding-left: 12px;
+    padding-right: 0px;
+}
+
+main .lnb .location > li:last-child {
+    width: 140px;
+    padding-left: 16px;
+}
+
+main .lnb .location > li:first-child:before {
+    display: none;
+}
+main .lnb .location > li:last-child:before {
+    margin-left: 5px;
+}
+
+main .lnb .location .home {
+    width: 30px;
+}
+
+main .lnb .location .home a img {
+    width: 20px;
+    display: block;
+}
+
+main .main_title {
+    padding-top: 100px;
+    text-align: center;
+    color: #fff;
+}
+
+main .main_title h2 {
+    font-size: 32px;
+    margin-bottom: 40px;
+}
+
+main .main_title p {
+    line-height: 1.6;
+    font-size: 24px;
+}
+
+/*전체, 검색*/
+.total {
+    width: 80%;
+    max-width: 1280px;
+    margin: 120px auto 0;
+}
+
+.total h2 {
+    width: 40%;
+    font-size: 26px;
+    letter-spacing: 1.2px;
+    float: left;
+    /*outline: 1px solid blue;*/
+}
+
+.total h2 span {
+    color: #e16254;
+}
+
+.searchBox {
+    width: 60%;
+    font-size: 0;
+    float: right;
+    /*outline: 1px solid red;*/
+    position: relative;
+}
+.searchBox form {
+    float: right;
+}
+.searchBox input {
+    width: 280px;
+	height: 15px;
+	border: 1px solid #ccc;
+	font-size: 16px;
+	display: inline-block;
+	vertical-align: top;
+    padding: 10px;
+    padding-right: 42px;
+    border-radius: 50px;
+}
+input[type=text] {
+    outline: none; 
+}
+
+.searchBox .searchBtn {
+    width:36px;
+	height: 36px;
+    border-radius: 50px;
+	background: #e16254 url(../img/sub14/icon_search.png) no-repeat center center;
+    background-size: 25px;
+	display: inline-block;
+	/*vertical-align: middle;*/
+	/*margin-left: -30px;*/
+    position: absolute;
+    left: 95%;
+
+}
+
+
+.news {
+    width: 80%;
+    max-width: 1280px;
+    margin: 80px auto 0;
+}
+
+.news .newsBox {
+    width: 100%;
+    height: 300px;
+    border: 1px solid #ccc;
+    margin-bottom: 60px;
+    position: relative;
+}
+
+.news .newsBox > a > img {
+    width: 360px;
+    /*height: 300px;*/
+    display: inline-block;
+    border-right: 1px solid #ccc;
+    float: left;
+    margin-right: 30px;
+}
+
+.news .newsBox .newsTxt h3 {
+    font-size: 20px;
+    margin-top: 40px;
+}
+
+.news .newsBox .newsTxt p {
+    font-size: 18px;
+    margin-top: 20px;
+    line-height: 1.8;
+}
+
+.news .newsBox .newsTxt span.date {
+    color: #ccc;
+    display: block;
+    margin-top: 50px;
+    /*outline: 2px solid red;*/
+}
+
+.news .newsBox .newsTxt .more {
+    position: absolute;
+    top: 78%;
+    right: 5%;
+    font-size: 18px;
+}
+
+.news .newsBox .newsTxt .more li {
+    float: left;
+}
+
+.news .newsBox .newsTxt .more li img {
+    display: inline-block;
+    margin-top: -5px;
+}
+
+
+
+/*페이저*/
+.pagination {
+    text-align: center;
+    margin: 80px auto;
+}
+
+.pagination .pager {
+    display: inline-block;
+}
+
+.pager li {
+    float: left;
+    border: 1px solid #e16254;
+    border-radius: 100px;
+    padding: 8px 16px;
+    margin-right: 12px;
+    font-size: 20px;
+}
+
+.pager li.on {
+    background-color: #e16254;
+}
+
+.pager li.on a {
+    color: #fff;
+}
+
+/*top버튼*/
+#tbtn {
+    width: 80px;
+    height: 80px;
+    background: url(../../img/top1.png) no-repeat;
+    border: none;
+    border-radius: 50%;
+    font-weight: bold;
+    font-size: 18px;
+    letter-spacing: -0.2px;
+    position: relative;
+    top: 80%;
+   left: 91%;
+    cursor: pointer;
+    transition: all .5s ease-out;
+    animation: tmove 1.5s infinite alternate linear;
+    box-shadow: 4px 7px 10px #999;
+}
+
+@keyframes tmove {
+    0% {
+        top: 80%;
+    }
+    100% {
+        top: 81%;
+    }
+}

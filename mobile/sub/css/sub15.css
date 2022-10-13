@@ -1,0 +1,346 @@
+@charset "utf-8";
+
+main {
+	width: 100%;
+	height: 420px;
+	background: url(../img/sub15/main_bg.png) no-repeat center/cover;
+	position: relative;
+	margin-top: 100px;
+}
+
+main:before {
+	content: "";
+	display: block;
+	width: 100%;
+	height: 100%;
+	background-color: #000;
+	opacity: 0.3;
+	position: absolute;
+	left: 0;
+	top: 0;
+}
+
+main .main_inner {
+    width: 90%;
+    margin: 0 auto;
+    position: relative;
+}
+
+/*lnb*/
+main .lnb {
+    position: absolute;
+    top: 30px;
+    left: 0;
+}
+
+main .lnb .location {
+    width: 300px;
+    /*text-align: center;*/
+}
+
+main .lnb .location > li {
+    float: left;
+    position: relative;
+    color: #fff;
+    font-size: 14px;
+}
+
+main .lnb .location > li:before {
+    content: "";
+    display: block;
+    width: 2px;
+    height: 12px;
+    background-color: #fff;
+    position: absolute;
+    top: 4px;
+    left: 0px;
+}
+main .lnb .location > li:nth-child(2) {
+    width: 70px;
+    padding-left: 12px;
+    padding-right: 0px;
+}
+
+main .lnb .location > li:last-child {
+    width: 140px;
+    padding-left: 16px;
+}
+
+main .lnb .location > li:first-child:before {
+	display: none;
+}
+main .lnb .location > li:last-child:before {
+    margin-left: 5px;
+}
+
+main .lnb .location .home {
+    width: 30px;
+}
+
+
+main .lnb .location .home a img {
+    width: 20px;
+    display: block;
+}
+
+main .main_title {
+    padding-top: 100px;
+    text-align: center;
+    color: #fff;
+}
+
+main .main_title h2 {
+	font-size: 32px;
+	margin-bottom: 40px;
+}
+
+main .main_title p {
+	line-height: 1.6;
+	font-size: 24px;
+}
+
+
+/*아코디언 박스*/
+.faq {
+    width: 80%;
+	max-width: 1280px;
+	margin: 120px auto 0;
+	color: #333;
+}
+
+.faq > h2 {
+	font-size: 32px;
+	text-align: center;
+	position: relative;
+}
+
+.faq h2 > img {
+    display: inline-block;
+    width: 40px;
+    position: absolute;
+    left: 43.5%;
+    top: 8px;
+}
+
+.faq > h2::after {
+	content: "";
+	display: block;
+	width: 36px;
+	height: 3px;
+	background-color: #e16254;
+	position: absolute;
+	top: 180%;
+	left: 50%;
+	transform: translateX(-50%);
+}
+.searchBox {
+	width: 100%;
+	height: 140px;
+	margin-top: 120px;
+	background-color: #eee;
+	font-size: 0;
+}
+.searchBox  input {
+	width: 570px;
+	height: 70px;
+	border: 1px solid #ccc;
+	padding: 0 24px;
+	font-size: 16px;
+	margin-top: 35px;
+	margin-left: 320px;
+	display: inline-block;
+	vertical-align: middle;
+}
+.searchBox .searchBtn {
+	width:60px;
+	height: 70px;
+	background: #e16254 url(../img/sub15/icon_search.png) no-repeat center;
+	display: inline-block;
+	vertical-align: middle;
+	margin-top: 35px;
+	margin-left: 10px;
+}
+
+/*탭메뉴*/
+.tabmenu {
+	width: 100%;
+	margin: 80px 0;
+}
+.tabmenu li {
+	float: left;
+	width: 20%;
+	text-align: center;
+	border: 1px solid #ccc;
+	border-top-left-radius: 14px;
+	border-top-right-radius: 14px;
+	box-sizing: border-box;
+}
+.tabmenu li a {
+	font-size: 20px;
+    padding: 18px 0;
+	letter-spacing: -0.8px;
+}
+.tabmenu li.active {
+	background-color:  #e16254;
+}
+.tabmenu li.active a {
+	color: #fff;
+}
+.faqCon {
+	border-top: 3px solid #e16254;
+}
+
+/*본문 컨텐츠*/
+#seoulland {
+	/*display: none;*/
+}
+#play {
+	display: none;
+}
+#ticket {
+	display: none;
+}
+#park {
+	display: none;
+}
+#annual {
+	display: none;
+}
+
+.faqCon .faqBox a {
+	border-bottom: 1px solid #ccc;
+	font-size: 20px;
+	padding: 30px 20px 30px 100px;
+	text-indent: 60px;
+	position: relative;
+}
+.faqCon .faqBox a::before {
+	content: "";
+	display: block;
+	width: 30px;
+	height: 30px;
+	background: url(../img/sub15/icon_question.png) no-repeat;
+	position: absolute;
+	top: 32%;
+	left: 2%;
+}
+
+.faqCon .faqBox a img {
+	display: block;
+	width: 30px;
+	position: absolute;
+	right: 4%;
+	top: 32%;
+	transition: all .6s;
+	transform: rotate(0deg);
+}
+.faqCon .faqBox>a.rotate img {
+    transform: rotate(-180deg);
+}
+
+
+.faqCon .faqBox .answer {
+	width: 100%;
+	background-color: #eee;
+	display: none;
+}
+.faqCon .faqBox .answer p {
+	font-size: 16px;
+	line-height: 2.2;
+	padding: 20px 100px 20px 160px;
+}
+
+/*페이저*/
+.pagination {
+	text-align: center;
+	margin: 80px auto;
+}
+.pagination .pager {
+	display: inline-block;
+}
+.pager li {
+	float: left;
+	border: 1px solid #e16254;
+	border-radius: 100px;
+	padding: 8px 16px;
+	margin-right: 12px;
+	font-size: 20px;
+}
+.pager li.on {
+	background-color: #e16254;
+}
+.pager li.on a {
+	color: #fff;
+}
+/*고객의 소리함 바로가기*/
+.pageMove {
+	width: 100%;
+	background-color: #eee;
+	padding: 30px 0;
+	text-align: center;
+	position: relative;
+}
+.pageMove::after {
+	content: "";
+	display: block;
+	width: 100px;
+	height: 100px;
+	background: url(../img/sub15/character.png) no-repeat;
+	position: absolute;
+	bottom: 60%;
+	left: 69.5%;
+    animation: move 2s infinite alternate linear;
+}
+
+@keyframes move {
+    0% {
+        bottom: 60%;
+    }
+    100% {
+        bottom: 68%;
+    }
+}
+.pageMove p {
+	font-size: 20px;
+	display: inline-block;
+	vertical-align: middle;
+	margin-right: 40px;
+}
+.pageMove  a {
+	display: inline-block;
+	text-align: center;
+	border-radius: 100px;
+	background-color: #e16254;
+	padding: 6px 20px;
+	color: #fff;
+	font-size: 14px;
+	vertical-align: middle;
+}
+
+/*top버튼*/
+#tbtn {
+    width: 80px;
+    height: 80px;
+    background: url(../../img/top1.png) no-repeat;
+    border: none;
+    border-radius: 50%;
+    font-weight: bold;
+    font-size: 18px;
+    letter-spacing: -0.2px;
+    position: relative;
+    top: 80%;
+   left: 91%;
+    cursor: pointer;
+    transition: all .5s ease-out;
+    animation: tmove 1.5s infinite alternate linear;
+    box-shadow: 4px 7px 10px #999;
+}
+
+@keyframes tmove {
+    0% {
+        top: 80%;
+    }
+    100% {
+        top: 81%;
+    }
+}

@@ -1,0 +1,242 @@
+@charset "utf-8";
+
+main {
+    width: 100%;
+    height: 192px;
+    background: url(../img/sub8/main_bg.png) no-repeat top/cover;
+    position: relative;
+    margin-top: 38px;
+}
+main:before {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 100%;
+    background-color: #000;
+    opacity: 0.3;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+main .main_inner {
+    width: 90%;
+    margin: 0 auto;
+    position: relative;
+}
+
+
+main .main_title {
+    padding-top: 28px;
+    text-align: center;
+    color: #fff;
+}
+
+main .main_title h2 {
+    font-size: 18px;
+    font-size: 1.125rem;
+    margin-bottom: 16px;
+}
+main .main_title p {
+    line-height: 1.8;
+    font-size: 12px;
+    font-size: 0.75rem;
+}
+
+/*section*/
+section {
+    width: 100%;
+    background-color: #eee;
+     padding: 60px 0;
+    box-sizing: border-box;
+	color: #333;
+}
+
+section .reserve {
+    width: 90%;
+    margin: 0 auto;
+    padding-bottom: 40px;
+    background-color: #fff;
+    border-radius: 20px;
+    box-shadow: 5px 7px 20px #ccc;
+}
+.reserve .reserve_title img {
+    display: block;
+    width: 106px;
+    margin: 0 auto;
+    padding: 20px 0 16px;
+}
+
+.reserve .reserve_title h2 {
+    text-align: center;
+    font-size: 22px;
+    font-size: 1.375rem;
+    position: relative;
+}
+
+.reserve .reserve_title h2::after {
+    content: "";
+    display: block;
+    width: 36px;
+    height: 3px;
+    background-color: #e16254;
+    position: absolute;
+    top: 180%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+/*방문 일자*/
+.visit {
+    width: 90%;
+    margin: 80px auto 0;
+}
+.visit h3 {
+    font-size: 20px;
+    font-size: 1.25rem;
+	margin-bottom: 12px;
+}
+.visit h3 img {
+	display: inline-block;
+	vertical-align: top;
+	margin-right: 4px;
+    width: 26px;
+}
+.visit .notice {
+    font-size: 12px;
+    font-size: 0.75rem;
+    color: #777;
+}
+.calendar-wrapper {
+	margin: 40px 0 0;
+}
+.calendar-container {
+    margin: 0 auto;
+}
+
+button.prev-button {
+    font-size: 18px;
+}
+
+span.month-label {
+    font-size: 16px;
+    font-size: 1rem;
+}
+
+button.next-button {
+    font-size: 18px;
+}
+
+/*인원 선택*/
+.visitor {
+    width: 90%;
+    margin: 40px auto 0;
+}
+.visitor h3 {
+    font-size: 20px;
+    font-size: 1.25rem;
+	margin-bottom: 12px;
+    position: relative;
+}
+.visitor h3 img {
+	display: inline-block;
+	vertical-align: top;
+	margin-right: 4px;
+    width: 26px;
+}
+.visitor .notice {
+    font-size: 12px;
+    font-size: 0.75rem;
+    color: #777;
+}
+
+.count_wrap {
+    margin-top: 40px;
+    position: relative;
+}
+.count_box {
+    width: 30%;
+    float: left;
+    margin-right: 4%;
+    text-align: center;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+}
+.count_box:last-child {
+    margin-right: 0;
+}
+.count_box p {
+    font-size: 14px;
+    font-size: 0.875rem;
+    line-height: 1.6;
+    padding-top: 6px;
+}
+.count_box p span {
+    display: block;
+    font-size: 11px;
+    font-size: 0.6875rem;
+    word-break: keep-all;
+    letter-spacing: -0.6px;
+    color: #e16254;
+}
+.count_box .counter {
+    margin: 8px 0;
+}
+.count_box .counter button {
+    cursor: pointer;
+    border: 1px solid #e16254;
+    padding: 2px 8px;
+    border-radius: 6px;
+    font-size: 16px;
+    font-size: 1rem;
+    background-color: transparent;
+}
+.count_box span.begin {
+    font-size: 14px;
+    font-size: 0.875rem;
+    padding: 0 4px;
+}
+.reserve_btn {
+    display: block;
+    width: 80px;
+    margin: 30px auto 0;
+    border: 1px solid #e16254;
+    border-radius: 50px;
+    padding: 8px;
+    text-align: center;
+    font-size: 12px;
+    font-size: 0.75rem;
+    letter-spacing: 0.8px;
+}
+
+/*top버튼*/
+#tbtn {
+   width: 45px;
+    height: 45px;
+    background: url(../../img/top.png) no-repeat;
+    background-size: 45px;
+    border: none;
+    border-radius: 50%;
+    font-weight: bold;
+    font-size: 14px;
+    font-size: 0.875rem;
+    letter-spacing: -0.2px;
+    position: relative;
+    top: 80%;
+   left: 87%;
+    cursor: pointer;
+    transition: all .5s ease-out;
+    animation: tmove 1.5s infinite alternate linear;
+    box-shadow: 4px 7px 10px #999;
+}
+
+@keyframes tmove {
+    0% {
+        top: 80%;
+    }
+    100% {
+        top: 81%;
+    }
+}
+
+footer {
+    margin-top: 0;
+}

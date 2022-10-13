@@ -1,0 +1,361 @@
+@charset "utf-8";
+
+/*main*/
+main {
+    width: 100%;
+    height: 420px;
+    background: url(../img/sub10/main_bg.png) no-repeat bottom/cover;
+    position: relative;
+    margin-top: 100px;
+    /*고정된 header의 높잇값만큼*/
+}
+
+main:before {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 100%;
+    background-color: #000;
+    opacity: 0.3;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+main .main_inner {
+    width: 90%;
+    margin: 0 auto;
+    position: relative;
+}
+
+/*lnb*/
+main .lnb {
+    position: absolute;
+    top: 30px;
+    left: 0;
+}
+main .lnb .location {
+    width: 300px;
+    /*text-align: center;*/
+}
+
+main .lnb .location > li {
+    float: left;
+    position: relative;
+	color: #fff;
+	font-size: 14px;
+}
+
+main .lnb .location > li:before {
+    content: "";
+    display: block;
+    width: 2px;
+    height: 12px;
+    background-color: #fff;
+    position: absolute;
+    top: 4px;
+    left: 0px;
+}
+main .lnb .location > li:nth-child(2) {
+    width: 70px;
+    padding-left: 12px;
+    padding-right: 0px;
+}
+main .lnb .location > li:last-child {
+    width: 140px;
+    padding-left: 16px;
+}
+
+main .lnb .location > li:first-child:before {
+    display: none;
+}
+
+main .lnb .location > li:last-child:before {
+	margin-left: 5px;
+}
+main .lnb .location .home {
+    width: 30px;
+}
+
+main .lnb .location .home a img {
+    width: 20px;
+    display: block;
+}
+
+main .main_title {
+    padding-top: 100px;
+    text-align: center;
+    color: #fff;
+}
+
+main .main_title h2 {
+    font-size: 32px;
+    margin-bottom: 40px;
+}
+
+main .main_title p {
+    line-height: 1.6;
+    font-size: 24px;
+}
+
+/*section*/
+/*오시는 길*/
+.come {
+	width: 100%;
+    margin-top: 120px;
+    color: #333;
+}
+.come .come_wrap {
+    width: 80%;
+    max-width: 1280px;
+    margin: 0 auto;
+}
+.come .come_wrap>h2{
+    font-size: 32px;
+    font-size: 2rem;
+    margin-bottom: 40px;
+    text-align: center;
+	position: relative;
+}
+
+.come .come_wrap>h2::after {
+	  content: "";
+    display: block;
+    width: 36px;
+    height: 3px;
+    background-color: #e16254;
+    position: absolute;
+    top: 180%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+/*지도*/
+.map {
+    width: 100%;
+    margin: 120px 0 60px;
+    /*position: relative;*/
+}
+
+.map iframe {
+    width: 100%;
+    max-width: 1280px;
+    margin: 0 auto;
+}
+.map .map_info {
+    text-align: center;
+    background-color: #eee;
+    padding: 40px 0;
+    border-bottom: 1px solid #ccc;
+}
+.map .map_info img {
+    width: 30px;
+    display: inline-block;
+     vertical-align: middle;
+}
+.map .map_info p {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.traffic {
+    margin-top: 120px;
+    width: 45%;
+    float: left;
+    position: relative;
+    padding-right: 40px;
+    box-sizing: border-box;
+    /*outline: 1px solid red;*/
+}
+.traffic::after {
+    content: "";
+    display: block;
+    width: 1px;
+    height: 630px;
+    background-color: #eee;
+    position: absolute;
+    top: 10%;
+    left: 100%;
+}
+
+/*지하철*/
+.subway {
+    width: 100%;
+}
+.subway h3 {
+    font-size: 26px;
+    position: relative;
+    margin-bottom: 30px;
+    text-indent: 56px;
+}
+.subway h3::before {
+    content: "";
+    display: block;
+    width: 40px;
+    height: 53px;
+    background: url(../img/sub10/icon_train.png) no-repeat;
+    position: absolute;
+    top: -4px;
+    left: 0;
+}
+.subway p {
+    font-size: 18px;
+}
+.subway p span {
+    color: #e16254;
+}
+.subway .subway_img {
+	width: 540px;
+	display: block;
+	margin-top: 30px;
+}
+/*버스*/
+.bus {
+    width: 100%;
+    margin-top: 60px;
+}
+.bus h3 {
+    font-size: 26px;
+    position: relative;
+    margin-bottom: 30px;
+    text-indent: 56px;
+}
+.bus h3::before {
+    content: "";
+    display: block;
+    width: 40px;
+    height: 40px;
+    background: url(../img/sub10/icon_bus.png) no-repeat;
+    position: absolute;
+    top: -4px;
+    left: 0;
+}
+.bus li {
+    margin-bottom: 24px;
+}
+
+.bus .category {
+    border: 1px solid #e16254;
+    display: inline-block;
+    border-radius: 100px;
+    padding: 4px 8px;
+    color: #fff;
+    background-color: #e16254;
+    margin-right: 16px;
+	letter-spacing: 1.2px;
+}
+.bus p {
+    display: inline-block;
+    margin-top: 12px;
+    line-height: 1.8;
+    letter-spacing: -1.2px;
+}
+.bus p span {
+	color: #e16254;
+	text-decoration: underline;
+}
+/*주차 안내*/
+.park {
+    margin-top: 120px;
+	padding-left: 40px;
+	box-sizing: border-box;
+    float: right;
+    width: 55%;
+}
+.park h3 {
+    font-size: 26px;
+    position: relative;
+    margin-bottom: 30px;
+    text-indent: 56px;
+}
+.park h3::before {
+    content: "";
+    display: block;
+    width: 40px;
+    height: 40px;
+    background: url(../img/sub10/icon_car.png) no-repeat;
+    position: absolute;
+    top: -4px;
+    left: 0;
+}
+.park table {
+    border: 1px solid #ccc;
+    border-top: 3px solid #e16254;
+    width: 100%;
+    margin-top: 39px;
+    border-collapse: collapse;
+}
+
+.park table thead {
+    width: 100%;
+    height: 80px;
+    background-color: rgba(225, 98, 84, 0.4);
+}
+
+
+.park table tbody th {
+    width: 40%;
+    height: 60px;
+    font-weight: 100;
+    font-size: 18px;
+}
+
+.park table tbody th,
+.park table tbody td {
+    border: 1px solid #ccc;
+    text-align: center;
+}
+
+.park table tbody tr:last-child td {
+    padding: 20px 12px;
+    box-sizing: border-box;
+}
+.park table tbody tr:last-child td li {
+    margin-bottom: 16px;
+    line-height: 1.8;
+    text-align: left;
+	position: relative;
+	padding-left: 12px;
+}
+.park table tbody tr:last-child td li::before {
+    content: "-";
+	display: block;
+	position: absolute;
+	left: 0;
+}
+.park table tbody tr:last-child td li span {
+    color: #e16254;
+}
+.park .park_location {
+	width: 628px;
+	display: block;
+	margin-top: 40px;
+}
+
+/*top버튼*/
+#tbtn {
+    width: 80px;
+    height: 80px;
+    background: url(../../img/top.png) no-repeat;
+    border: none;
+    border-radius: 50%;
+    font-weight: bold;
+    font-size: 18px;
+    letter-spacing: -0.2px;
+    position: relative;
+    top: 80%;
+   left: 91%;
+    cursor: pointer;
+    transition: all .5s ease-out;
+    animation: tmove 1.5s infinite alternate linear;
+    box-shadow: 4px 7px 10px #999;
+}
+
+@keyframes tmove {
+    0% {
+        top: 80%;
+    }
+    100% {
+        top: 81%;
+    }
+}

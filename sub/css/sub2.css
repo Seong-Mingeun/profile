@@ -1,0 +1,386 @@
+@charset "utf-8";
+
+/*main*/
+main {
+    width: 100%;
+    height: 420px;
+    background: url(../img/sub2/main_bg.png) no-repeat center/cover;
+    position: relative;
+    margin-top: 100px;
+    /*고정된 header의 높잇값만큼*/
+}
+
+main:before {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 100%;
+    background-color: #000;
+    opacity: 0.3;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+main .main_inner {
+    width: 90%;
+    margin: 0 auto;
+    position: relative;
+}
+
+/*lnb*/
+main .lnb {
+    position: absolute;
+    top: 30px;
+    left: 0;
+}
+
+main .lnb .location {
+    width: 300px;
+    /*text-align: center;*/
+}
+
+
+main .lnb .location > li {
+    float: left;
+    position: relative;
+	color: #fff;
+	font-size: 14px;
+}
+
+main .lnb .location > li:before {
+    content: "";
+    display: block;
+    width: 2px;
+    height: 12px;
+    background-color: #fff;
+    position: absolute;
+    top: 4px;
+    left: 0px;
+}
+main .lnb .location > li:nth-child(2) {
+    width: 60px;
+    padding-left: 12px;
+    padding-right: 0px;
+}
+main .lnb .location > li:last-child {
+    width: 140px;
+    padding-left: 16px;
+}
+
+main .lnb .location > li:first-child:before {
+    display: none;
+}
+main .lnb .location > li:last-child:before {
+    margin-left: 4px;
+}
+main .lnb .location .home {
+    width: 30px;
+}
+
+main .lnb .location .home a img {
+    width: 20px;
+    display: block;
+}
+
+main .main_title {
+    padding-top: 100px;
+    text-align: center;
+    color: #fff;
+}
+
+main .main_title h2 {
+    font-size: 32px;
+    margin-bottom: 40px;
+}
+
+main .main_title p {
+    line-height: 1.6;
+    font-size: 24px;
+}
+
+/*festival*/
+.festival {
+    width: 100%;
+    background: url(../img/sub2/section_bg.png) no-repeat top/cover;
+    padding-top: 60px;
+    padding-bottom: 80px;
+    box-sizing: border-box;
+}
+
+.fes_wrap {
+    width: 80%;
+    max-width: 1280px;
+    margin: 60px auto 0;
+}
+
+.fes_wrap .fes_box {
+    width: 100%;
+    margin-bottom: 100px;
+}
+.fes_wrap .fes_box:last-child {
+    margin-bottom: 0;
+}
+
+/*페스티발 - 이미지*/
+.fes_wrap .fes_box .fes_bg {
+    width: 600px;
+     border-radius: 16px;
+    float: left;
+    overflow: hidden;
+    box-shadow: 2px 4px 10px #eee;
+    /*  outline: 1px solid red;*/
+}
+
+.fes_wrap .fes_box .fes_bg .thumbs {
+	height: 345px;
+    cursor: pointer;
+    display: block;
+    transition: all .6s ease-in-out;
+}
+.fes_wrap .fes_box .fes_bg:hover .thumbs {
+    transform: scale(1.05);
+     border-radius: 16px;
+}
+
+/*페스티발 - 정보*/
+.fes_wrap .fes_box .fes_des {
+    width: 40%;
+    height: 380px;
+    /*outline: 2px solid red;*/
+    float: right;
+	color: #333;
+}
+
+.fes_wrap .fes_box .fes_des h2 {
+    font-size: 24px;
+    padding: 16px 0 20px;
+    letter-spacing: 2px;
+    position: relative;
+}
+
+.fes_wrap .fes_box .fes_des h2::after {
+    content: "";
+    display: block;
+    width: 180px;
+    height: 4px;
+    background-color: #333;
+    position: absolute;
+    top: 45%;
+    left: 62%;
+    transform: translateY(-50%);
+
+}
+
+.fes_wrap .fes_box .fes_des > p {
+    line-height: 1.8;
+    font-size: 18px;
+}
+
+.fes_box .fes_des .fes_info {
+    margin-top: 20px;
+}
+
+.fes_box .fes_des .fes_info li {
+    margin-top: 14px;
+	font-size: 16px;
+}
+
+.fes_box .fes_des .fes_info li:last-child {
+    margin-top: 30px;
+    padding-bottom: 35px;
+    border-bottom: 1px solid #ccc;
+    white-space: nowrap;
+}
+
+.fes_box .fes_des .fes_info li img {
+    width: 40px;
+    display: block;
+    float: left;
+    margin-right: 4px;
+}
+
+.fes_box .fes_des .fes_info li p {
+    padding: 7px 0;
+    font-size: 18px;
+}
+
+.fes_box .fes_des .fes_info li p span {
+    margin-left: 14px;
+}
+
+/*coming soon*/
+.coming {
+    width: 100%;
+}
+.coming_title {
+    text-align: center;
+    background-color: #60369D;
+    height: 260px;
+}
+.coming_title .cont {
+    height: 230px;
+}
+.coming_title .cont h3 {
+    font-size: 36px;
+    letter-spacing: 6px;
+    color: #fff;
+    padding: 12px 0 16px;
+    box-sizing: border-box;
+}
+
+.coming_title .cont p {
+    color: #fff;
+    font-size: 20px;
+    margin-bottom:16px;
+}
+.coming_title .cont p.name {
+    font-size: 26px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    color: #f7962d;
+}
+.coming_title .cont p.date {
+    font-size: 14px;
+    display: inline-block;
+    background-color: #2b1805;
+    padding: 6px 10px;
+    box-sizing: border-box;
+}
+.coming_title span {
+    width: 100%;
+    height: 15px;
+    background-color: #2b1805;
+    display: block;
+}
+.coming>h2 {
+    text-align: center;
+    font-size: 32px;
+    letter-spacing: 10px;
+    margin-bottom: 80px;
+}
+
+.coming img {
+    width: 100%;
+    display: block;
+}
+.coming .coming_con {
+    width: 100%;
+    height: 1200px;
+    background: url(../img/sub2/coming_bg.png) no-repeat center/cover;
+    padding-top: 120px;
+    box-sizing: border-box;
+}
+.coming .coming_con h2 {
+    font-size: 40px;
+    text-align: center;
+    line-height: 2.4;
+    letter-spacing: 3px;
+    color: #fff;
+    text-shadow: 5px 3px 10px #e65a0a;
+    text-align: center;
+}
+#event2 {
+    display: none;
+}
+.coming .coming_con .tabmenu {
+    width: 800px;
+    margin: 100px auto 20px;
+    text-align: center;
+}
+.coming .coming_con .tabmenu li {
+    float: left;
+    width: 50%;
+    border: 2px solid #fff;
+    box-sizing: border-box;
+    border-radius: 10px;
+    padding: 30px 0;
+}
+.coming .coming_con .tabmenu li.on {
+    background-color: #fff;
+    border: 2px solid #e65a0a;
+}
+.coming .coming_con .tabmenu li a {
+    font-size: 22px;
+    color: #fff;
+}
+.coming .coming_con .tabmenu li.on a {
+    color: #e65a0a;
+}
+.coming .coming_con .coming_box img {
+    width: 800px;
+    margin: 0 auto;
+    display: block;
+}
+
+.coming .coming_con .coming_box .coming_txtbox {
+    text-align: center;
+    margin-top: 60px;
+    color: #fff;
+}
+.coming .coming_con .coming_box .coming_txtbox h3 {
+    font-size: 26px;
+    margin-bottom: 20px;
+    position: relative;
+    z-index: 0;
+}
+.coming .coming_con .coming_box .coming_txtbox h3::after {
+    content: "";
+    display: block;
+    width: 230px;
+    height: 10px;
+    background-color: #feb62d;
+    position: absolute;
+    left: 44%;
+    top: 67%;
+    z-index: -1;
+}
+.coming .coming_con .coming_box:last-child .coming_txtbox h3::after{
+    content: "";
+    display: block;
+    width: 270px;
+    height: 10px;
+    background-color: #feb62d;
+    position: absolute;
+    left: 43%;
+    top: 86%;
+    z-index: -1;
+    
+}
+.coming .coming_con .coming_box .coming_txtbox p {
+    font-size: 22px;
+    line-height: 1.6;
+}
+
+/*top버튼*/
+#tbtn {
+    width: 80px;
+    height: 80px;
+    background: url(../../img/top.png) no-repeat;
+    border: none;
+    border-radius: 50%;
+    font-weight: bold;
+    font-size: 18px;
+    letter-spacing: -0.2px;
+    position: relative;
+    top: 80%;
+   left: 91%;
+    cursor: pointer;
+    transition: all .5s ease-out;
+    animation: tmove 1.5s infinite alternate linear;
+    box-shadow: 4px 7px 10px #999;
+}
+
+@keyframes tmove {
+    0% {
+        top: 80%;
+    }
+    100% {
+        top: 81%;
+    }
+}
+
+footer {
+    margin-top: 0;
+}
+
